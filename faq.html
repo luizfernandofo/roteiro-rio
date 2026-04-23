@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html class="light" lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Itinerário no Rio - FAQ e Dicas</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&amp;family=Epilogue:ital,wght@0,100..900;1,100..900&amp;family=Manrope:wght@200..800&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#9fd1b8",
+                        "on-primary-container": "#5b1604",
+                        "surface-variant": "#e4e2de",
+                        "inverse-surface": "#30312e",
+                        "secondary": "#5a5c79",
+                        "inverse-primary": "#ffb4a1",
+                        "tertiary-fixed": "#bbeed4",
+                        "on-secondary-container": "#5e617d",
+                        "secondary-fixed-dim": "#c2c4e5",
+                        "on-surface-variant": "#55423e",
+                        "on-secondary-fixed-variant": "#424560",
+                        "on-background": "#1b1c1a",
+                        "on-primary-fixed-variant": "#7c2e19",
+                        "surface-dim": "#dbdad6",
+                        "on-error-container": "#93000a",
+                        "background": "#fbf9f5",
+                        "primary": "#9a442d",
+                        "on-tertiary-container": "#003725",
+                        "surface-container-high": "#eae8e4",
+                        "on-tertiary-fixed-variant": "#1f4f3c",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#e07a5f",
+                        "on-primary-fixed": "#3c0800",
+                        "secondary-container": "#dcddff",
+                        "tertiary": "#386753",
+                        "inverse-on-surface": "#f2f0ed",
+                        "outline": "#88726d",
+                        "surface-tint": "#9a442d",
+                        "on-surface": "#1b1c1a",
+                        "surface-container": "#efeeea",
+                        "on-secondary-fixed": "#161a32",
+                        "secondary-fixed": "#dfe0ff",
+                        "surface": "#fbf9f5",
+                        "outline-variant": "#dbc1ba",
+                        "surface-container-highest": "#e4e2de",
+                        "on-tertiary-fixed": "#002115",
+                        "surface-bright": "#fbf9f5",
+                        "primary-fixed-dim": "#ffb4a1",
+                        "primary-fixed": "#ffdbd2",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#70a18a",
+                        "surface-container-low": "#f5f3ef",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-secondary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "surface-container-lowest": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader"],
+                        "body": ["Manrope"],
+                        "label": ["Epilogue"],
+                        "handwritten": ["Caveat"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .bg-texture {
+                background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+            }
+            .hide-scrollbar::-webkit-scrollbar {
+                display: none;
+            }
+            .hide-scrollbar {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body
+    class="bg-surface text-on-surface font-body bg-texture pb-24 selection:bg-primary-container selection:text-on-primary-container">
+    <nav
+        class="bg-[#FDFBF7]/90 dark:bg-stone-900/90 backdrop-blur-xl fixed top-0 w-full z-50 flex justify-between items-center px-4 h-14 border-b border-outline-variant/15 transition-all duration-300 ease-in-out">
+        <span
+            class="text-xl font-bold font-newsreader text-[#E07A5F] dark:text-[#E07A5F] tracking-tight absolute left-1/2 -translate-x-1/2 text-center pointer-events-none">Itinerário
+            no Rio</span>
+        <div class="w-6 z-10 relative"></div>
+    </nav>
+    <div
+        class="fixed top-14 left-0 w-full z-40 bg-surface/95 backdrop-blur-md border-b border-outline-variant/15 shadow-sm">
+        <div class="flex overflow-x-auto hide-scrollbar px-4 py-2 gap-6 sm:justify-center items-center h-10">
+            <a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap"
+                href="sexta.html">Sexta</a>
+            <a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap"
+                href="sabado.html">Sábado</a>
+            <a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap"
+                href="domingo.html">Domingo</a>
+            <a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap"
+                href="segunda.html">Segunda</a>
+            <a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap"
+                href="terca.html">Terça</a>
+            <a class="font-label text-sm text-primary font-bold hover:text-primary transition-colors border-b-2 border-primary pb-0.5 whitespace-nowrap"
+                href="faq.html">FAQ e Dicas</a>
+        </div>
+    </div>
+    <main class="max-w-4xl mx-auto pt-32 px-4 sm:px-8 pb-20" id="faq">
+        <section class="mb-12">
+            <h1 class="font-headline text-5xl sm:text-6xl text-primary mb-3">FAQ e Dicas</h1>
+            <p class="font-handwritten text-3xl text-secondary -rotate-2 ml-2">Guia rápido para a viagem no Rio</p>
+        </section>
+        <section class="grid gap-6 mb-12">
+            <article class="bg-surface-container-low rounded-lg p-6 border border-outline-variant/20">
+                <h2 class="font-headline text-2xl text-on-surface mb-3">Como usar este roteiro?</h2>
+                <p class="text-on-surface-variant leading-relaxed">Cada página representa um dia da viagem. Use o menu
+                    fixo no topo para trocar rapidamente entre sexta e terça, e volte aqui para consultar dúvidas e
+                    dicas práticas.</p>
+            </article>
+            <article class="bg-surface-container-low rounded-lg p-6 border border-outline-variant/20">
+                <h2 class="font-headline text-2xl text-on-surface mb-3">Qual o melhor deslocamento entre atrações?</h2>
+                <p class="text-on-surface-variant leading-relaxed">Para trajetos curtos em Copacabana, caminhar é ótimo.
+                    Para deslocamentos maiores, combine metrô e app de mobilidade. Em horários de pico, saia com margem
+                    extra para evitar atrasos.</p>
+            </article>
+            <article class="bg-surface-container-low rounded-lg p-6 border border-outline-variant/20">
+                <h2 class="font-headline text-2xl text-on-surface mb-3">Quanto tempo reservar em cada parada?</h2>
+                <p class="text-on-surface-variant leading-relaxed">Atrações principais como Cristo, Pão de Açúcar e
+                    Centro Histórico pedem entre 2h e 3h. Praias e pausas gastronômicas funcionam bem com blocos
+                    flexíveis de 1h a 2h.</p>
+            </article>
+        </section>
+        <section class="grid md:grid-cols-2 gap-6">
+            <article class="bg-surface-container rounded-lg p-6 border border-outline-variant/20">
+                <h3 class="font-headline text-2xl text-on-surface mb-3">Dicas de segurança</h3>
+                <ul class="space-y-2 text-on-surface-variant">
+                    <li>Prefira circular com itens essenciais e documentos digitalizados.</li>
+                    <li>Evite ruas muito vazias tarde da noite.</li>
+                    <li>Use bolsas pequenas e mantenha celular guardado em deslocamentos.</li>
+                </ul>
+            </article>
+            <article class="bg-surface-container rounded-lg p-6 border border-outline-variant/20">
+                <h3 class="font-headline text-2xl text-on-surface mb-3">Dicas extras</h3>
+                <ul class="space-y-2 text-on-surface-variant">
+                    <li>Leve protetor solar e garrafa de água todos os dias.</li>
+                    <li>Tenha dinheiro/cartão para quiosques e pequenas compras.</li>
+                    <li>Chegue cedo em pontos concorridos para evitar filas longas.</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
