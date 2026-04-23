@@ -1,247 +1,320 @@
 <!DOCTYPE html>
 
-<html lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Itinerário no Rio</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300..800;1,300..800&amp;family=Manrope:wght@200..800&amp;family=Caveat:wght@400..700&amp;family=Epilogue:wght@100..900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-        tailwind.config = {
-          darkMode: "class",
-          theme: {
-            extend: {
-              "colors": {
-                      "tertiary-fixed-dim": "#9fd1b8",
-                      "on-primary-container": "#5b1604",
-                      "surface-variant": "#e4e2de",
-                      "inverse-surface": "#30312e",
-                      "secondary": "#5a5c79",
-                      "inverse-primary": "#ffb4a1",
-                      "tertiary-fixed": "#bbeed4",
-                      "on-secondary-container": "#5e617d",
-                      "secondary-fixed-dim": "#c2c4e5",
-                      "on-surface-variant": "#55423e",
-                      "on-secondary-fixed-variant": "#424560",
-                      "on-background": "#1b1c1a",
-                      "on-primary-fixed-variant": "#7c2e19",
-                      "surface-dim": "#dbdad6",
-                      "on-error-container": "#93000a",
-                      "background": "#fbf9f5",
-                      "primary": "#9a442d",
-                      "on-tertiary-container": "#003725",
-                      "surface-container-high": "#eae8e4",
-                      "on-tertiary-fixed-variant": "#1f4f3c",
-                      "on-primary": "#ffffff",
-                      "primary-container": "#e07a5f",
-                      "on-primary-fixed": "#3c0800",
-                      "secondary-container": "#dcddff",
-                      "tertiary": "#386753",
-                      "inverse-on-surface": "#f2f0ed",
-                      "outline": "#88726d",
-                      "surface-tint": "#9a442d",
-                      "on-surface": "#1b1c1a",
-                      "surface-container": "#efeeea",
-                      "on-secondary-fixed": "#161a32",
-                      "secondary-fixed": "#dfe0ff",
-                      "surface": "#fbf9f5",
-                      "outline-variant": "#dbc1ba",
-                      "surface-container-highest": "#e4e2de",
-                      "on-tertiary-fixed": "#002115",
-                      "surface-bright": "#fbf9f5",
-                      "primary-fixed-dim": "#ffb4a1",
-                      "primary-fixed": "#ffdbd2",
-                      "on-tertiary": "#ffffff",
-                      "tertiary-container": "#70a18a",
-                      "surface-container-low": "#f5f3ef",
-                      "on-error": "#ffffff",
-                      "error-container": "#ffdad6",
-                      "on-secondary": "#ffffff",
-                      "error": "#ba1a1a",
-                      "surface-container-lowest": "#ffffff"
-              },
-              "borderRadius": {
-                      "DEFAULT": "0.125rem",
-                      "lg": "0.25rem",
-                      "xl": "0.5rem",
-                      "full": "0.75rem"
-              },
-              "spacing": {},
-              "fontFamily": {
-                      "headline": [
-                              "Newsreader"
-                      ],
-                      "body": [
-                              "Manrope"
-                      ],
-                      "label": [
-                              "Epilogue"
-                      ],
-                      "caveat": [
-                              "Caveat"
-                      ]
-              }
-      },
-          },
-        }
-      </script>
-<style>
-        .washi-tape {
-            position: absolute;
-            background-color: theme('colors.outline-variant');
-            opacity: 0.7;
-            transform: rotate(-2deg);
-            z-index: 10;
-        }
-        .polaroid-shadow {
-            box-shadow: 0px 12px 32px rgba(85, 66, 62, 0.08);
-        }
-        .ghost-border {
-            box-shadow: inset 0 0 0 1px rgba(219, 193, 186, 0.15);
-        }
+<html lang="en">
+
+<head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>Itinerário no Rio</title>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300..800;1,300..800&amp;family=Manrope:wght@200..800&amp;family=Caveat:wght@400..700&amp;family=Epilogue:wght@100..900&amp;display=swap"
+                rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+                rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+                rel="stylesheet" />
+        <script id="tailwind-config">
+                tailwind.config = {
+                        darkMode: "class",
+                        theme: {
+                                extend: {
+                                        "colors": {
+                                                "tertiary-fixed-dim": "#9fd1b8",
+                                                "on-primary-container": "#5b1604",
+                                                "surface-variant": "#e4e2de",
+                                                "inverse-surface": "#30312e",
+                                                "secondary": "#5a5c79",
+                                                "inverse-primary": "#ffb4a1",
+                                                "tertiary-fixed": "#bbeed4",
+                                                "on-secondary-container": "#5e617d",
+                                                "secondary-fixed-dim": "#c2c4e5",
+                                                "on-surface-variant": "#55423e",
+                                                "on-secondary-fixed-variant": "#424560",
+                                                "on-background": "#1b1c1a",
+                                                "on-primary-fixed-variant": "#7c2e19",
+                                                "surface-dim": "#dbdad6",
+                                                "on-error-container": "#93000a",
+                                                "background": "#fbf9f5",
+                                                "primary": "#9a442d",
+                                                "on-tertiary-container": "#003725",
+                                                "surface-container-high": "#eae8e4",
+                                                "on-tertiary-fixed-variant": "#1f4f3c",
+                                                "on-primary": "#ffffff",
+                                                "primary-container": "#e07a5f",
+                                                "on-primary-fixed": "#3c0800",
+                                                "secondary-container": "#dcddff",
+                                                "tertiary": "#386753",
+                                                "inverse-on-surface": "#f2f0ed",
+                                                "outline": "#88726d",
+                                                "surface-tint": "#9a442d",
+                                                "on-surface": "#1b1c1a",
+                                                "surface-container": "#efeeea",
+                                                "on-secondary-fixed": "#161a32",
+                                                "secondary-fixed": "#dfe0ff",
+                                                "surface": "#fbf9f5",
+                                                "outline-variant": "#dbc1ba",
+                                                "surface-container-highest": "#e4e2de",
+                                                "on-tertiary-fixed": "#002115",
+                                                "surface-bright": "#fbf9f5",
+                                                "primary-fixed-dim": "#ffb4a1",
+                                                "primary-fixed": "#ffdbd2",
+                                                "on-tertiary": "#ffffff",
+                                                "tertiary-container": "#70a18a",
+                                                "surface-container-low": "#f5f3ef",
+                                                "on-error": "#ffffff",
+                                                "error-container": "#ffdad6",
+                                                "on-secondary": "#ffffff",
+                                                "error": "#ba1a1a",
+                                                "surface-container-lowest": "#ffffff"
+                                        },
+                                        "borderRadius": {
+                                                "DEFAULT": "0.125rem",
+                                                "lg": "0.25rem",
+                                                "xl": "0.5rem",
+                                                "full": "0.75rem"
+                                        },
+                                        "spacing": {},
+                                        "fontFamily": {
+                                                "headline": [
+                                                        "Newsreader"
+                                                ],
+                                                "body": [
+                                                        "Manrope"
+                                                ],
+                                                "label": [
+                                                        "Epilogue"
+                                                ],
+                                                "caveat": [
+                                                        "Caveat"
+                                                ]
+                                        }
+                                },
+                        },
+                }
+        </script>
+        <style>
+                .washi-tape {
+                        position: absolute;
+                        background-color: theme('colors.outline-variant');
+                        opacity: 0.7;
+                        transform: rotate(-2deg);
+                        z-index: 10;
+                }
+
+                .polaroid-shadow {
+                        box-shadow: 0px 12px 32px rgba(85, 66, 62, 0.08);
+                }
+
+                .ghost-border {
+                        box-shadow: inset 0 0 0 1px rgba(219, 193, 186, 0.15);
+                }
+
                 .hide-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
+                        display: none;
+                }
+
                 .hide-scrollbar {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-      </style>
-<style>
-    body {
-      min-height: max(884px, 100dvh);
-    }
-  </style>
+                        -ms-overflow-style: none;
+                        scrollbar-width: none;
+                }
+        </style>
+        <style>
+                body {
+                        min-height: max(884px, 100dvh);
+                }
+        </style>
 </head>
-<body class="bg-surface text-on-surface font-body antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen relative pb-24 md:pb-0">
-<!-- TopAppBar -->
-<nav class="bg-[#FDFBF7]/90 dark:bg-stone-900/90 backdrop-blur-xl fixed top-0 w-full z-50 flex justify-between items-center px-4 h-14 border-b border-outline-variant/15 transition-all duration-300 ease-in-out">
-<button aria-label="Menu" class="text-[#E07A5F] dark:text-[#E07A5F] hover:opacity-75 transition-opacity z-10 relative">
-<span class="material-symbols-outlined" data-icon="menu">menu</span>
-</button>
-<span class="text-xl font-bold font-newsreader text-[#E07A5F] dark:text-[#E07A5F] tracking-tight absolute left-1/2 -translate-x-1/2 text-center pointer-events-none">Itinerário no Rio</span>
-<div class="w-6 z-10 relative"></div> <!-- Spacer for center alignment -->
-</nav>
-<!-- Sub Navigation -->
-<div class="fixed top-14 left-0 w-full z-40 bg-surface/95 backdrop-blur-md border-b border-outline-variant/15 shadow-sm">
-<div class="flex overflow-x-auto hide-scrollbar px-4 py-2 gap-6 sm:justify-center items-center h-10">
-<a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap" href="sexta.html">Sexta</a>
-<a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap" href="sabado.html">Sábado</a>
-<a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap" href="domingo.html">Domingo</a>
-<a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap" href="segunda.html">Segunda</a>
-<a class="font-label text-sm text-primary font-bold hover:text-primary transition-colors border-b-2 border-primary pb-0.5 whitespace-nowrap" href="terca.html">Terça</a>
-<a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap" href="faq.html">FAQ e Dicas</a>
-</div>
-</div>
-<main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-32">
-<!-- Section 5 - Terça-feira (Final Day) -->
-<section class="relative py-16" id="terca">
-<!-- Section Header -->
-<div class="mb-16 relative">
-<div class="washi-tape w-24 h-6 -top-3 left-4"></div>
-<h2 class="font-headline text-4xl md:text-5xl lg:text-6xl text-on-surface mb-2 tracking-tight">Terça-feira</h2>
-<p class="font-caveat text-2xl text-secondary ml-4 transform -rotate-1">28 de Abril - Despedida</p>
-</div>
-<!-- Morning & Lunch Bento Grid -->
-<div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-24">
-<!-- Morning: Shopping/Beach -->
-<article class="md:col-span-7 bg-surface-container-low rounded-xl p-8 relative">
-<div class="washi-tape w-16 h-4 -top-2 right-12 transform rotate-3"></div>
-<div class="flex items-start gap-4 mb-6">
-<span class="material-symbols-outlined text-primary text-3xl">shopping_bag</span>
-<div>
-<h3 class="font-headline text-2xl text-on-surface">Manhã: Copacabana</h3>
-<p class="font-caveat text-xl text-secondary mt-1">Últimas lembranças ou um mergulho</p>
-</div>
-</div>
-<p class="text-on-surface-variant text-lg leading-relaxed mb-6 font-body">
-                        As horas finais na cidade pedem uma caminhada tranquila pelo calçadão. Oportunidade para adquirir lembranças de última hora nas galerias locais ou aproveitar a brisa do mar para uma despedida silenciosa.
-                    </p>
-<!-- Polaroid -->
-<div class="bg-surface-container-lowest p-3 pb-8 rounded-DEFAULT polaroid-shadow ghost-border transform rotate-1 w-full max-w-sm mx-auto mt-8">
-<img alt="Panoramic view of Rio de Janeiro coastline and mountains" class="w-full h-48 object-cover rounded-DEFAULT mb-4" data-alt="stunning high-angle panoramic view of Rio de Janeiro featuring the blue ocean, white sandy beaches of Copacabana and Ipanema, and the iconic green mountains in the background under a clear sky" src="https://lh3.googleusercontent.com/aida/ADBb0uhjjfqT81No_fZ94OjgZEYGBWb7gSvP1JEy-JPlHcw_p4Hz_SNfdhU0btxOmEDOZ9JE8l-sOZAWqdn3cenmJzsBcTLo-rvNc6dguM1UBPrSTA85P8T-Gw0LcsVel7JZU9gP5u_bzCJVi8jyZfGq2HDDUvgvraIePKhygKtQoEHIkUbqMcOeiuGxaTHHTu0648rOislu6W52B_SRIHU11rf0vGvFHivjQlvGZeRbnaLFnQzsLQtIq_-25ipEbywPve33T7in7MQyWis"/>
-<p class="font-caveat text-center text-secondary text-xl">Até logo, Princesinha do Mar.</p>
-</div>
-</article>
-<!-- Lunch -->
-<article class="md:col-span-5 bg-surface-container-highest rounded-xl p-8 flex flex-col justify-center relative">
-<div class="washi-tape w-20 h-5 -bottom-2 right-8 transform -rotate-2"></div>
-<span class="material-symbols-outlined text-primary text-4xl mb-4">restaurant</span>
-<h3 class="font-headline text-2xl text-on-surface mb-2">Almoço de Despedida</h3>
-<p class="font-caveat text-xl text-secondary mb-6">Restaurante local em Copacabana</p>
-<p class="text-on-surface-variant leading-relaxed font-body">
-                        Uma refeição sem pressa antes do trajeto final. Sabores locais para selar a experiência carioca.
-                    </p>
-<div class="mt-8">
-<span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-variant text-on-surface-variant font-label text-sm">
-<span class="material-symbols-outlined text-sm">schedule</span>
-                            Recomendado: 12:30
-                        </span>
-</div>
-</article>
-</div>
-<!-- Afternoon: Departure -->
-<div class="relative max-w-3xl mx-auto">
-<!-- Connecting Line mimicking a dashed pen stroke -->
-<div class="absolute top-0 bottom-0 left-8 md:left-1/2 w-px border-l-2 border-dashed border-outline-variant opacity-50 -z-10"></div>
-<article class="bg-surface-container-lowest p-8 rounded-xl polaroid-shadow ghost-border relative overflow-hidden">
-<!-- Subtle gradient accent -->
-<div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary-fixed to-transparent opacity-30 rounded-bl-full"></div>
-<div class="md:flex items-center gap-8">
-<div class="md:w-1/3 mb-6 md:mb-0 relative">
-<div class="washi-tape w-12 h-4 -top-2 left-4 transform -rotate-6"></div>
-<img alt="Airplane wing" class="w-full h-40 object-cover rounded-DEFAULT ghost-border transform -rotate-2" data-alt="view from an airplane window looking at the wing above fluffy white clouds, warm evening light, travel aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBaC3yk0XDguhJe11IVeqmD1w8quClcuiHFW9qvYlDTh98weXUQJtz54URevUUhb0W8OgUXn5T-KblU8c-yLdm-jIElqE_C5wEbWISSF9XPZDazK1J9ymMXbvjl71zbZLZ3AsE_oIxPie5xzlP2TlNJn4Si04mkk2Uyl2d78Qtr9lKwZX69MK5MVbBO79VfNdAztG3dB5AgUabZlqoKni8pyopY1pxjHSfDrrxbXwr5mGeT3ITy0_mNXiOOMUrktE4j4XACs--kNXg"/>
-</div>
-<div class="md:w-2/3">
-<div class="flex items-center gap-3 mb-2">
-<span class="material-symbols-outlined text-tertiary">flight_takeoff</span>
-<h3 class="font-headline text-3xl text-on-surface">Partida (GIG)</h3>
-</div>
-<div class="space-y-4 mt-6">
-<div class="flex items-start gap-4">
-<div class="bg-surface-variant w-12 h-12 rounded-full flex items-center justify-center shrink-0">
-<span class="font-label font-bold text-on-surface-variant">14:00</span>
-</div>
-<div>
-<p class="font-bold text-on-surface font-body">Saída para o Galeão</p>
-<p class="text-sm text-on-surface-variant mt-1">Tempo estimado de trajeto: 45-60 min dependendo do trânsito.</p>
-</div>
-</div>
-<div class="flex items-start gap-4">
-<div class="bg-primary-container w-12 h-12 rounded-full flex items-center justify-center shrink-0">
-<span class="font-label font-bold text-on-primary-container">17:00</span>
-</div>
-<div>
-<p class="font-bold text-on-surface font-body">Voo de Retorno</p>
-<p class="font-caveat text-lg text-primary mt-1">Fim do roteiro. Boa viagem!</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</article>
-</div>
-</section>
-</main>
-<!-- BottomNavBar (Mobile Only) -->
-<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-[#FDFBF7]/90 dark:bg-stone-900/90 backdrop-blur-lg rounded-t-lg shadow-[0px_-12px_32px_rgba(85,66,62,0.08)] transition-all duration-300 ease-in-out">
-<a class="flex flex-col items-center justify-center text-[#3D405B] dark:text-stone-500 opacity-60 hover:opacity-100 hover:text-[#E07A5F] transition-all" href="#">
-<span class="material-symbols-outlined mb-1">auto_stories</span>
-<span class="font-manrope text-[10px] uppercase tracking-widest">Timeline</span>
-</a>
-<a class="flex flex-col items-center justify-center text-[#3D405B] dark:text-stone-500 opacity-60 hover:opacity-100 hover:text-[#E07A5F] transition-all" href="#">
-<span class="material-symbols-outlined mb-1">restaurant</span>
-<span class="font-manrope text-[10px] uppercase tracking-widest">Food</span>
-</a>
-<a class="flex flex-col items-center justify-center text-[#3D405B] dark:text-stone-500 opacity-60 hover:opacity-100 hover:text-[#E07A5F] transition-all" href="#">
-<span class="material-symbols-outlined mb-1">photo_camera</span>
-<span class="font-manrope text-[10px] uppercase tracking-widest">Photos</span>
-</a>
-<a class="flex flex-col items-center justify-center text-[#E07A5F] dark:text-[#E07A5F] scale-110 transition-transform duration-200" href="#">
-<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">edit_note</span>
-<span class="font-manrope text-[10px] uppercase tracking-widest text-[#E07A5F]">Diary</span>
-</a>
-</nav>
-</body></html>
+
+<body
+        class="bg-surface text-on-surface font-body antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen relative pb-24 md:pb-0">
+        <!-- TopAppBar -->
+        <nav
+                class="bg-[#FDFBF7]/90 dark:bg-stone-900/90 backdrop-blur-xl fixed top-0 w-full z-50 flex justify-between items-center px-4 h-14 border-b border-outline-variant/15 transition-all duration-300 ease-in-out">
+                <button aria-label="Menu"
+                        class="text-[#E07A5F] dark:text-[#E07A5F] hover:opacity-75 transition-opacity z-10 relative">
+                        <span class="material-symbols-outlined" data-icon="menu">menu</span>
+                </button>
+                <span
+                        class="text-xl font-bold font-newsreader text-[#E07A5F] dark:text-[#E07A5F] tracking-tight absolute left-1/2 -translate-x-1/2 text-center pointer-events-none">Itinerário
+                        no Rio</span>
+                <div class="w-6 z-10 relative"></div> <!-- Spacer for center alignment -->
+        </nav>
+        <!-- Sub Navigation -->
+        <div
+                class="fixed top-14 left-0 w-full z-40 bg-surface/95 backdrop-blur-md border-b border-outline-variant/15 shadow-sm">
+                <div class="flex overflow-x-auto hide-scrollbar px-4 py-2 gap-6 sm:justify-center items-center h-10">
+                        <a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap"
+                                href="sexta.html">Sexta</a>
+                        <a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap"
+                                href="sabado.html">Sábado</a>
+                        <a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap"
+                                href="domingo.html">Domingo</a>
+                        <a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap"
+                                href="segunda.html">Segunda</a>
+                        <a class="font-label text-sm text-primary font-bold hover:text-primary transition-colors border-b-2 border-primary pb-0.5 whitespace-nowrap"
+                                href="terca.html">Terça</a>
+                        <a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap"
+                                href="faq.html">FAQ e Dicas</a>
+                </div>
+        </div>
+        <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-32">
+                <!-- Section 5 - Terça-feira (Final Day) -->
+                <section class="relative py-16" id="terca">
+                        <!-- Section Header -->
+                        <div class="mb-16 relative">
+                                <div class="washi-tape w-24 h-6 -top-3 left-4"></div>
+                                <h2
+                                        class="font-headline text-4xl md:text-5xl lg:text-6xl text-on-surface mb-2 tracking-tight">
+                                        Terça-feira</h2>
+                                <p class="font-caveat text-2xl text-secondary ml-4 transform -rotate-1">28 de Abril -
+                                        Despedida</p>
+                        </div>
+                        <!-- Morning & Lunch Bento Grid -->
+                        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-24">
+                                <!-- Morning: Shopping/Beach -->
+                                <article class="md:col-span-7 bg-surface-container-low rounded-xl p-8 relative">
+                                        <div class="washi-tape w-16 h-4 -top-2 right-12 transform rotate-3"></div>
+                                        <div class="flex items-start gap-4 mb-6">
+                                                <span
+                                                        class="material-symbols-outlined text-primary text-3xl">shopping_bag</span>
+                                                <div>
+                                                        <h3 class="font-headline text-2xl text-on-surface">Manhã:
+                                                                Copacabana</h3>
+                                                        <p class="font-caveat text-xl text-secondary mt-1">Últimas
+                                                                lembranças ou um mergulho</p>
+                                                </div>
+                                        </div>
+                                        <p class="text-on-surface-variant text-lg leading-relaxed mb-6 font-body">
+                                                As horas finais na cidade pedem uma caminhada tranquila pelo calçadão.
+                                                Oportunidade para adquirir lembranças de última hora nas galerias locais
+                                                ou aproveitar a brisa do mar para uma despedida silenciosa.
+                                        </p>
+                                        <!-- Polaroid -->
+                                        <div
+                                                class="bg-surface-container-lowest p-3 pb-8 rounded-DEFAULT polaroid-shadow ghost-border transform rotate-1 w-full max-w-sm mx-auto mt-8">
+                                                <img alt="Panoramic view of Rio de Janeiro coastline and mountains"
+                                                        class="w-full h-48 object-cover rounded-DEFAULT mb-4"
+                                                        data-alt="stunning high-angle panoramic view of Rio de Janeiro featuring the blue ocean, white sandy beaches of Copacabana and Ipanema, and the iconic green mountains in the background under a clear sky"
+                                                        src="https://lh3.googleusercontent.com/aida/ADBb0uhjjfqT81No_fZ94OjgZEYGBWb7gSvP1JEy-JPlHcw_p4Hz_SNfdhU0btxOmEDOZ9JE8l-sOZAWqdn3cenmJzsBcTLo-rvNc6dguM1UBPrSTA85P8T-Gw0LcsVel7JZU9gP5u_bzCJVi8jyZfGq2HDDUvgvraIePKhygKtQoEHIkUbqMcOeiuGxaTHHTu0648rOislu6W52B_SRIHU11rf0vGvFHivjQlvGZeRbnaLFnQzsLQtIq_-25ipEbywPve33T7in7MQyWis" />
+                                                <p class="font-caveat text-center text-secondary text-xl">Até logo,
+                                                        Princesinha do Mar.</p>
+                                        </div>
+                                </article>
+                                <!-- Lunch -->
+                                <article
+                                        class="md:col-span-5 bg-surface-container-highest rounded-xl p-8 flex flex-col justify-center relative">
+                                        <div class="washi-tape w-20 h-5 -bottom-2 right-8 transform -rotate-2"></div>
+                                        <span
+                                                class="material-symbols-outlined text-primary text-4xl mb-4">restaurant</span>
+                                        <h3 class="font-headline text-2xl text-on-surface mb-2">Almoço de Despedida</h3>
+                                        <p class="font-caveat text-xl text-secondary mb-6">Restaurante local em
+                                                Copacabana</p>
+                                        <p class="text-on-surface-variant leading-relaxed font-body">
+                                                Uma refeição sem pressa antes do trajeto final. Sabores locais para
+                                                selar a experiência carioca.
+                                        </p>
+                                        <div class="mt-8">
+                                                <span
+                                                        class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-variant text-on-surface-variant font-label text-sm">
+                                                        <span class="material-symbols-outlined text-sm">schedule</span>
+                                                        Recomendado: 12:30
+                                                </span>
+                                        </div>
+                                </article>
+                        </div>
+                        <!-- Afternoon: Departure -->
+                        <div class="relative max-w-3xl mx-auto">
+                                <!-- Connecting Line mimicking a dashed pen stroke -->
+                                <div
+                                        class="absolute top-0 bottom-0 left-8 md:left-1/2 w-px border-l-2 border-dashed border-outline-variant opacity-50 -z-10">
+                                </div>
+                                <article
+                                        class="bg-surface-container-lowest p-8 rounded-xl polaroid-shadow ghost-border relative overflow-hidden">
+                                        <!-- Subtle gradient accent -->
+                                        <div
+                                                class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary-fixed to-transparent opacity-30 rounded-bl-full">
+                                        </div>
+                                        <div class="md:flex items-center gap-8">
+                                                <div class="md:w-1/3 mb-6 md:mb-0 relative">
+                                                        <div
+                                                                class="washi-tape w-12 h-4 -top-2 left-4 transform -rotate-6">
+                                                        </div>
+                                                        <img alt="Airplane wing"
+                                                                class="w-full h-40 object-cover rounded-DEFAULT ghost-border transform -rotate-2"
+                                                                data-alt="view from an airplane window looking at the wing above fluffy white clouds, warm evening light, travel aesthetic"
+                                                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBaC3yk0XDguhJe11IVeqmD1w8quClcuiHFW9qvYlDTh98weXUQJtz54URevUUhb0W8OgUXn5T-KblU8c-yLdm-jIElqE_C5wEbWISSF9XPZDazK1J9ymMXbvjl71zbZLZ3AsE_oIxPie5xzlP2TlNJn4Si04mkk2Uyl2d78Qtr9lKwZX69MK5MVbBO79VfNdAztG3dB5AgUabZlqoKni8pyopY1pxjHSfDrrxbXwr5mGeT3ITy0_mNXiOOMUrktE4j4XACs--kNXg" />
+                                                </div>
+                                                <div class="md:w-2/3">
+                                                        <div class="flex items-center gap-3 mb-2">
+                                                                <span
+                                                                        class="material-symbols-outlined text-tertiary">flight_takeoff</span>
+                                                                <h3 class="font-headline text-3xl text-on-surface">
+                                                                        Partida (GIG)</h3>
+                                                        </div>
+                                                        <div class="space-y-4 mt-6">
+                                                                <div class="flex items-start gap-4">
+                                                                        <div
+                                                                                class="bg-surface-variant w-12 h-12 rounded-full flex items-center justify-center shrink-0">
+                                                                                <span
+                                                                                        class="font-label font-bold text-on-surface-variant">14:00</span>
+                                                                        </div>
+                                                                        <div>
+                                                                                <p
+                                                                                        class="font-bold text-on-surface font-body">
+                                                                                        Saída para o Galeão</p>
+                                                                                <p
+                                                                                        class="text-sm text-on-surface-variant mt-1">
+                                                                                        Tempo estimado de trajeto: 45-60
+                                                                                        min dependendo do trânsito.</p>
+                                                                        </div>
+                                                                </div>
+                                                                <div class="flex items-start gap-4">
+                                                                        <div
+                                                                                class="bg-primary-container w-12 h-12 rounded-full flex items-center justify-center shrink-0">
+                                                                                <span
+                                                                                        class="font-label font-bold text-on-primary-container">17:00</span>
+                                                                        </div>
+                                                                        <div>
+                                                                                <p
+                                                                                        class="font-bold text-on-surface font-body">
+                                                                                        Voo de Retorno</p>
+                                                                                <p
+                                                                                        class="font-caveat text-lg text-primary mt-1">
+                                                                                        Fim do roteiro. Boa viagem!</p>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </article>
+                        </div>
+                </section>
+        </main>
+        <!-- BottomNavBar (Mobile Only) -->
+        <nav
+                class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-[#FDFBF7]/90 dark:bg-stone-900/90 backdrop-blur-lg rounded-t-lg shadow-[0px_-12px_32px_rgba(85,66,62,0.08)] transition-all duration-300 ease-in-out">
+                <a class="flex flex-col items-center justify-center text-[#3D405B] dark:text-stone-500 opacity-60 hover:opacity-100 hover:text-[#E07A5F] transition-all"
+                        href="#">
+                        <span class="material-symbols-outlined mb-1">auto_stories</span>
+                        <span class="font-manrope text-[10px] uppercase tracking-widest">Timeline</span>
+                </a>
+                <a class="flex flex-col items-center justify-center text-[#3D405B] dark:text-stone-500 opacity-60 hover:opacity-100 hover:text-[#E07A5F] transition-all"
+                        href="#">
+                        <span class="material-symbols-outlined mb-1">restaurant</span>
+                        <span class="font-manrope text-[10px] uppercase tracking-widest">Food</span>
+                </a>
+                <a class="flex flex-col items-center justify-center text-[#3D405B] dark:text-stone-500 opacity-60 hover:opacity-100 hover:text-[#E07A5F] transition-all"
+                        href="#">
+                        <span class="material-symbols-outlined mb-1">photo_camera</span>
+                        <span class="font-manrope text-[10px] uppercase tracking-widest">Photos</span>
+                </a>
+                <a class="flex flex-col items-center justify-center text-[#E07A5F] dark:text-[#E07A5F] scale-110 transition-transform duration-200"
+                        href="#">
+                        <span class="material-symbols-outlined mb-1"
+                                style="font-variation-settings: 'FILL' 1;">edit_note</span>
+                        <span class="font-manrope text-[10px] uppercase tracking-widest text-[#E07A5F]">Diary</span>
+                </a>
+        </nav>
+</body>
+
+</html>

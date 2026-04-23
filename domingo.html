@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 
-<html class="light" lang="pt-BR"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Itinerário no Rio - Domingo, 26 de Abril</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;family=Caveat:wght@400..700&amp;family=Epilogue:wght@100..900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html class="light" lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Itinerário no Rio - Domingo, 26 de Abril</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;family=Caveat:wght@400..700&amp;family=Epilogue:wght@100..900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -78,174 +86,249 @@
             },
         }
     </script>
-<style>
-        .font-caveat { font-family: 'Caveat', cursive; }
-        .polaroid-shadow { box-shadow: 0px 12px 32px rgba(85, 66, 62, 0.08); }
-        .glass-nav { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+    <style>
+        .font-caveat {
+            font-family: 'Caveat', cursive;
+        }
+
+        .polaroid-shadow {
+            box-shadow: 0px 12px 32px rgba(85, 66, 62, 0.08);
+        }
+
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
         .washi-tape {
             background-color: theme('colors.outline-variant');
             opacity: 0.8;
             transform: rotate(-2deg);
         }
+
         .hide-scrollbar::-webkit-scrollbar {
             display: none;
         }
+
         .hide-scrollbar {
             -ms-overflow-style: none;
             scrollbar-width: none;
         }
     </style>
-<style>
-    body {
-      min-height: max(884px, 100dvh);
-    }
-  </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
 </head>
-<body class="bg-surface text-on-surface font-body antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col pb-24 md:pb-0">
-<!-- TopAppBar -->
-<nav class="bg-[#FDFBF7]/90 dark:bg-stone-900/90 backdrop-blur-xl fixed top-0 w-full z-50 flex justify-between items-center px-4 h-14 border-b border-outline-variant/15 transition-all duration-300 ease-in-out">
-<button aria-label="Menu" class="text-[#E07A5F] dark:text-[#E07A5F] hover:opacity-75 transition-opacity z-10 relative">
-<span class="material-symbols-outlined" data-icon="menu">menu</span>
-</button>
-<span class="text-xl font-bold font-newsreader text-[#E07A5F] dark:text-[#E07A5F] tracking-tight absolute left-1/2 -translate-x-1/2 text-center pointer-events-none">Itinerário no Rio</span>
-<div class="w-6 z-10 relative"></div> <!-- Spacer for center alignment -->
-</nav>
-<!-- Sub Navigation -->
-<div class="fixed top-14 left-0 w-full z-40 bg-surface/95 backdrop-blur-md border-b border-outline-variant/15 shadow-sm">
-<div class="flex overflow-x-auto hide-scrollbar px-4 py-2 gap-6 sm:justify-center items-center h-10">
-<a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap" href="sexta.html">Sexta</a>
-<a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap" href="sabado.html">Sábado</a>
-<a class="font-label text-sm text-primary font-bold hover:text-primary transition-colors border-b-2 border-primary pb-0.5 whitespace-nowrap" href="domingo.html">Domingo</a>
-<a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap" href="segunda.html">Segunda</a>
-<a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap" href="terca.html">Terça</a>
-<a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap" href="faq.html">FAQ e Dicas</a>
-</div>
-</div>
-<!-- Main Content Canvas -->
-<main class="flex-grow pt-28 md:pt-32">
-<!-- Hero Section (The Cover) -->
-<section class="relative w-full h-[530px] md:h-[618px] flex flex-col justify-center px-6 md:px-12 lg:px-24 overflow-hidden bg-surface-container-low">
-<div class="absolute inset-0 z-0">
-<img alt="Copacabana beach from above at golden hour" class="w-full h-full object-cover opacity-60" data-alt="Aerial view of Copacabana beach in Rio de Janeiro at golden hour, soft waves crashing on the shore, warm sunlight reflecting off the water" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKTfyNovhyzPKSTNIbFnaKTdUEJc9qvYsMsHdXGSx6WFwFu71yvb0XkDdWOhGdh9QMYY8mo5MwI3TlR7NFExoIi_X2dGxU_BoEb6kGxFyCwt4SneUyoV5ZcgIRmRdZD3lweGdKgCtfaIj7U0AIpSaejPc54myJQvcTwKUiTEehZRBBoJkhA2mfF_zkbh998zlgOh1qlw3BOnjriZF_s_lbf9iKsTodvbDkMAXIW_cJlVuBrW6gVMSzPsvCMytQf4ETgjOqNqwDn1Q6"/>
-<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
-</div>
-<div class="relative z-10 max-w-3xl">
-<h2 class="font-headline text-5xl md:text-7xl font-light text-on-surface leading-tight mb-6">Um domingo<br/><span class="italic text-primary">em Copacabana</span></h2>
-<!-- Scattered Polaroid Hint -->
-<div class="absolute -right-4 top-10 md:right-12 md:top-0 transform rotate-6 hidden sm:block">
-<div class="bg-surface-container-lowest p-3 pb-8 rounded shadow-lg max-w-[200px] border border-outline-variant/10">
-<div class="absolute top-[-10px] left-1/2 -translate-x-1/2 w-12 h-3 washi-tape"></div>
-<img alt="Forte de Copacabana" class="w-full h-auto aspect-square object-cover mb-3" data-alt="Vintage style photo of Forte de Copacabana, soft muted colors, old stone walls overlooking the ocean" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU8EynFTdtF3iVhphGpcXH8vjNhOTdcizxUs8JYVxexMv8nk_UgkbAlFAHa-tWxwcE9Io3SumRtl48OicAXJ72aAFy5pvKDKf2k1U9VogR2U-_p-rdydpfWaZDzIjPfstn-rPNuX7FcghEL0SsMFkDmQEkgkrX3BZkAXPExuevU65JRPpsfeGawQfjN--NIeMF7G95sloZS8qK691eeBynqNEFbj6haCQxoPR9acFA5IZITcbGzqHQfTITFYDfFZjCkjUakdL-x3pE"/>
-<p class="font-caveat text-on-surface-variant text-center text-lg">Vistas do Forte</p>
-</div>
-</div>
-</div>
-</section>
-<!-- The Itinerary (Domingo) -->
-<section class="bg-surface py-20 px-6 md:px-12 lg:px-24" id="domingo">
-<div class="max-w-4xl mx-auto">
-<!-- Day Header -->
-<div class="mb-16 flex flex-col md:flex-row items-baseline gap-4">
-<h3 class="font-headline text-4xl md:text-5xl text-on-surface">Domingo</h3>
-<p class="font-caveat text-xl text-primary transform -rotate-2">26 de Abril</p>
-</div>
-<!-- Timeline Container -->
-<div class="space-y-24 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-surface-variant hidden md:block"></div>
-<!-- Activity 1: Morning -->
-<div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active mb-16 md:mb-24">
-<!-- Marker -->
-<div class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-surface bg-surface-container-low text-primary shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow-sm z-10 hidden md:flex">
-<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">church</span>
-</div>
-<!-- Content Card (Bento/Scrapbook Style) -->
-<div class="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] relative">
-<div class="bg-surface-container-lowest p-6 rounded-lg polaroid-shadow border border-outline-variant/15 transform md:rotate-1">
-<div class="flex items-center gap-2 mb-4">
-<span class="material-symbols-outlined text-outline" style="font-variation-settings: 'FILL' 0;">schedule</span>
-<span class="font-label text-sm text-on-surface-variant uppercase tracking-wide">09:00 - Manhã</span>
-</div>
-<h4 class="font-headline text-2xl text-on-surface mb-2">Paróquia São Paulo Apóstolo</h4>
-<p class="font-body text-on-surface-variant leading-relaxed mb-4">Missa matinal em uma das paróquias mais tradicionais do bairro. Arquitetura serena e um momento de contemplação antes do dia começar.</p>
-<div class="inline-flex items-center gap-2 px-3 py-1.5 bg-surface-container rounded text-xs font-label text-on-surface-variant border border-outline-variant/30">
-<span class="material-symbols-outlined text-sm">location_on</span>
+
+<body
+    class="bg-surface text-on-surface font-body antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col pb-24 md:pb-0">
+    <!-- TopAppBar -->
+    <nav
+        class="bg-[#FDFBF7]/90 dark:bg-stone-900/90 backdrop-blur-xl fixed top-0 w-full z-50 flex justify-between items-center px-4 h-14 border-b border-outline-variant/15 transition-all duration-300 ease-in-out">
+        <button aria-label="Menu"
+            class="text-[#E07A5F] dark:text-[#E07A5F] hover:opacity-75 transition-opacity z-10 relative">
+            <span class="material-symbols-outlined" data-icon="menu">menu</span>
+        </button>
+        <span
+            class="text-xl font-bold font-newsreader text-[#E07A5F] dark:text-[#E07A5F] tracking-tight absolute left-1/2 -translate-x-1/2 text-center pointer-events-none">Itinerário
+            no Rio</span>
+        <div class="w-6 z-10 relative"></div> <!-- Spacer for center alignment -->
+    </nav>
+    <!-- Sub Navigation -->
+    <div
+        class="fixed top-14 left-0 w-full z-40 bg-surface/95 backdrop-blur-md border-b border-outline-variant/15 shadow-sm">
+        <div class="flex overflow-x-auto hide-scrollbar px-4 py-2 gap-6 sm:justify-center items-center h-10">
+            <a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap"
+                href="sexta.html">Sexta</a>
+            <a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap"
+                href="sabado.html">Sábado</a>
+            <a class="font-label text-sm text-primary font-bold hover:text-primary transition-colors border-b-2 border-primary pb-0.5 whitespace-nowrap"
+                href="domingo.html">Domingo</a>
+            <a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap"
+                href="segunda.html">Segunda</a>
+            <a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap"
+                href="terca.html">Terça</a>
+            <a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap"
+                href="faq.html">FAQ e Dicas</a>
+        </div>
+    </div>
+    <!-- Main Content Canvas -->
+    <main class="flex-grow pt-28 md:pt-32">
+        <!-- Hero Section (The Cover) -->
+        <section
+            class="relative w-full h-[530px] md:h-[618px] flex flex-col justify-center px-6 md:px-12 lg:px-24 overflow-hidden bg-surface-container-low">
+            <div class="absolute inset-0 z-0">
+                <img alt="Copacabana beach from above at golden hour" class="w-full h-full object-cover opacity-60"
+                    data-alt="Aerial view of Copacabana beach in Rio de Janeiro at golden hour, soft waves crashing on the shore, warm sunlight reflecting off the water"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKTfyNovhyzPKSTNIbFnaKTdUEJc9qvYsMsHdXGSx6WFwFu71yvb0XkDdWOhGdh9QMYY8mo5MwI3TlR7NFExoIi_X2dGxU_BoEb6kGxFyCwt4SneUyoV5ZcgIRmRdZD3lweGdKgCtfaIj7U0AIpSaejPc54myJQvcTwKUiTEehZRBBoJkhA2mfF_zkbh998zlgOh1qlw3BOnjriZF_s_lbf9iKsTodvbDkMAXIW_cJlVuBrW6gVMSzPsvCMytQf4ETgjOqNqwDn1Q6" />
+                <div class="absolute inset-0 bg-gradient-to-t from-surface-container-low to-transparent"></div>
+            </div>
+            <div class="relative z-10 max-w-3xl">
+                <h2 class="font-headline text-5xl md:text-7xl font-light text-on-surface leading-tight mb-6">Um
+                    domingo<br /><span class="italic text-primary">em Copacabana</span></h2>
+                <!-- Scattered Polaroid Hint -->
+                <div class="absolute -right-4 top-10 md:right-12 md:top-0 transform rotate-6 hidden sm:block">
+                    <div
+                        class="bg-surface-container-lowest p-3 pb-8 rounded shadow-lg max-w-[200px] border border-outline-variant/10">
+                        <div class="absolute top-[-10px] left-1/2 -translate-x-1/2 w-12 h-3 washi-tape"></div>
+                        <img alt="Forte de Copacabana" class="w-full h-auto aspect-square object-cover mb-3"
+                            data-alt="Vintage style photo of Forte de Copacabana, soft muted colors, old stone walls overlooking the ocean"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU8EynFTdtF3iVhphGpcXH8vjNhOTdcizxUs8JYVxexMv8nk_UgkbAlFAHa-tWxwcE9Io3SumRtl48OicAXJ72aAFy5pvKDKf2k1U9VogR2U-_p-rdydpfWaZDzIjPfstn-rPNuX7FcghEL0SsMFkDmQEkgkrX3BZkAXPExuevU65JRPpsfeGawQfjN--NIeMF7G95sloZS8qK691eeBynqNEFbj6haCQxoPR9acFA5IZITcbGzqHQfTITFYDfFZjCkjUakdL-x3pE" />
+                        <p class="font-caveat text-on-surface-variant text-center text-lg">Vistas do Forte</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- The Itinerary (Domingo) -->
+        <section class="bg-surface py-20 px-6 md:px-12 lg:px-24" id="domingo">
+            <div class="max-w-4xl mx-auto">
+                <!-- Day Header -->
+                <div class="mb-16 flex flex-col md:flex-row items-baseline gap-4">
+                    <h3 class="font-headline text-4xl md:text-5xl text-on-surface">Domingo</h3>
+                    <p class="font-caveat text-xl text-primary transform -rotate-2">26 de Abril</p>
+                </div>
+                <!-- Timeline Container -->
+                <div
+                    class="space-y-24 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-surface-variant hidden md:block">
+                </div>
+                <!-- Activity 1: Morning -->
+                <div
+                    class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active mb-16 md:mb-24">
+                    <!-- Marker -->
+                    <div
+                        class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-surface bg-surface-container-low text-primary shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow-sm z-10 hidden md:flex">
+                        <span class="material-symbols-outlined text-sm"
+                            style="font-variation-settings: 'FILL' 1;">church</span>
+                    </div>
+                    <!-- Content Card (Bento/Scrapbook Style) -->
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] relative">
+                        <div
+                            class="bg-surface-container-lowest p-6 rounded-lg polaroid-shadow border border-outline-variant/15 transform md:rotate-1">
+                            <div class="flex items-center gap-2 mb-4">
+                                <span class="material-symbols-outlined text-outline"
+                                    style="font-variation-settings: 'FILL' 0;">schedule</span>
+                                <span class="font-label text-sm text-on-surface-variant uppercase tracking-wide">09:00 -
+                                    Manhã</span>
+                            </div>
+                            <h4 class="font-headline text-2xl text-on-surface mb-2">Paróquia São Paulo Apóstolo</h4>
+                            <p class="font-body text-on-surface-variant leading-relaxed mb-4">Missa matinal em uma das
+                                paróquias mais tradicionais do bairro. Arquitetura serena e um momento de contemplação
+                                antes do dia começar.</p>
+                            <div
+                                class="inline-flex items-center gap-2 px-3 py-1.5 bg-surface-container rounded text-xs font-label text-on-surface-variant border border-outline-variant/30">
+                                <span class="material-symbols-outlined text-sm">location_on</span>
                                 Copacabana
                             </div>
-</div>
-</div>
-</div>
-<!-- Activity 2: Midday (Polaroid Focus) -->
-<div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active mb-16 md:mb-24">
-<!-- Marker -->
-<div class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-surface bg-surface-container-low text-primary shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow-sm z-10 hidden md:flex">
-<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">restaurant</span>
-</div>
-<!-- Content Card -->
-<div class="w-full md:w-[calc(50%-3rem)] relative">
-<!-- Scrapbook Composition -->
-<div class="relative">
-<!-- Background Note -->
-<div class="absolute -inset-4 bg-surface-container-low rounded-lg transform -rotate-2 -z-10 border border-surface-variant"></div>
-<!-- The Polaroid -->
-<div class="bg-surface-container-lowest p-4 pb-12 rounded polaroid-shadow border border-outline-variant/10 relative z-10 transform rotate-1">
-<div class="absolute top-[-12px] right-8 w-16 h-4 washi-tape"></div>
-<div class="flex justify-between items-start mb-4 px-2">
-<div class="flex flex-col">
-<span class="font-label text-xs text-on-surface-variant uppercase tracking-wider mb-1">Meio-dia</span>
-<h4 class="font-headline text-xl text-on-surface">Forte &amp; Colombo</h4>
-</div>
-<span class="material-symbols-outlined text-outline" style="font-variation-settings: 'FILL' 0;">local_cafe</span>
-</div>
-<img alt="Brunch at Confeitaria Colombo with a view" class="w-full aspect-[4/3] object-cover rounded-sm border border-outline-variant/20" data-alt="Elegant brunch setup with a cup of coffee topped with whipped cream, pastries, and orange juice on a wooden table with the Rio de Janeiro coast and Sugarloaf Mountain in the background." src="https://lh3.googleusercontent.com/aida/ADBb0ug__UyojVFsM1K_PsZ_nvxQG5KD5ebh5sEu2GKmvc9Y9-wYVqGw9VZGkknBJFDz3AvGf_xIuM4OFS-MIm9NRu91Z5KpdQ5N5np5KMaKJDNw4u6e_qvMI1RtCWIq4vJI2GMR0dwwB7mpL-bs-q8vyF-jj5KHgXAz-1elKccBHfUo1D2yhgtN8hJK_dvrJNnWpO5nDMhAdSTUC8C3pGsnzrx3aBFcSJBaDbgPho3z_7D4a_uT5TxtOXFS3-0T5wQiCWOijeqy-hG1ew"/>
-<p class="font-caveat text-xl text-on-surface-variant absolute bottom-3 right-4 transform -rotate-3">Brunch com vista para o mar</p>
-</div>
-</div>
-</div>
-</div>
-<!-- Activity 3: Afternoon -->
-<div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active mb-8">
-<!-- Marker -->
-<div class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-surface bg-surface-container-low text-primary shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow-sm z-10 hidden md:flex">
-<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">beach_access</span>
-</div>
-<!-- Content Card -->
-<div class="w-full md:w-[calc(50%-3rem)] relative">
-<div class="bg-surface-container-lowest p-8 rounded-lg polaroid-shadow border border-outline-variant/15 transform md:-rotate-1 relative overflow-hidden">
-<!-- Decorative element -->
-<div class="absolute -right-8 -top-8 w-24 h-24 bg-tertiary-fixed-dim/20 rounded-full blur-2xl"></div>
-<div class="flex items-center gap-2 mb-6">
-<span class="font-label text-sm text-on-surface-variant uppercase tracking-wide">Tarde</span>
-</div>
-<h4 class="font-headline text-3xl text-on-surface mb-4">Posto 5, Copacabana</h4>
-<p class="font-body text-on-surface-variant leading-relaxed mb-6">Tarde dedicada ao relaxamento nas areias de Copacabana. Água de coco gelada, leitura leve e a brisa do Atlântico.</p>
-<!-- Chips -->
-<div class="flex flex-wrap gap-2">
-<span class="px-3 py-1 bg-surface-variant text-on-surface-variant font-label text-xs rounded uppercase tracking-wider border border-outline-variant/50">Praia</span>
-<span class="px-3 py-1 bg-surface-variant text-on-surface-variant font-label text-xs rounded uppercase tracking-wider border border-outline-variant/50">Descanso</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- BottomNavBar (Mobile Only) -->
-<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-[#FDFBF7]/90 dark:bg-stone-900/90 backdrop-blur-lg rounded-t-lg shadow-[0px_-12px_32px_rgba(85,66,62,0.08)] md:hidden">
-<a class="flex flex-col items-center justify-center text-[#3D405B] dark:text-stone-500 opacity-60 hover:opacity-100 hover:text-[#E07A5F] transition-all duration-300 ease-in-out" href="#">
-<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">auto_stories</span>
-<span class="font-manrope text-[10px] uppercase tracking-widest">Timeline</span>
-</a>
-<a class="flex flex-col items-center justify-center text-[#3D405B] dark:text-stone-500 opacity-60 hover:opacity-100 hover:text-[#E07A5F] transition-all duration-300 ease-in-out" href="#">
-<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">restaurant</span>
-<span class="font-manrope text-[10px] uppercase tracking-widest">Food</span>
-</a>
-<a class="flex flex-col items-center justify-center text-[#3D405B] dark:text-stone-500 opacity-60 hover:opacity-100 hover:text-[#E07A5F] transition-all duration-300 ease-in-out" href="#">
-<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">photo_camera</span>
-<span class="font-manrope text-[10px] uppercase tracking-widest">Photos</span>
-</a>
-<!-- Active State: Diary -->
-<a class="flex flex-col items-center justify-center text-[#E07A5F] dark:text-[#E07A5F] scale-110 transition-transform duration-200" href="#">
-<span class="material-symbols-outlined mb-1 text-[#E07A5F]" style="font-variation-settings: 'FILL' 1;">edit_note</span>
-<span class="font-manrope text-[10px] uppercase tracking-widest text-[#E07A5F]">Diary</span>
-</a>
-</nav>
-</body></html>
+                        </div>
+                    </div>
+                </div>
+                <!-- Activity 2: Midday (Polaroid Focus) -->
+                <div
+                    class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active mb-16 md:mb-24">
+                    <!-- Marker -->
+                    <div
+                        class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-surface bg-surface-container-low text-primary shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow-sm z-10 hidden md:flex">
+                        <span class="material-symbols-outlined text-sm"
+                            style="font-variation-settings: 'FILL' 1;">restaurant</span>
+                    </div>
+                    <!-- Content Card -->
+                    <div class="w-full md:w-[calc(50%-3rem)] relative">
+                        <!-- Scrapbook Composition -->
+                        <div class="relative">
+                            <!-- Background Note -->
+                            <div
+                                class="absolute -inset-4 bg-surface-container-low rounded-lg transform -rotate-2 -z-10 border border-surface-variant">
+                            </div>
+                            <!-- The Polaroid -->
+                            <div
+                                class="bg-surface-container-lowest p-4 pb-12 rounded polaroid-shadow border border-outline-variant/10 relative z-10 transform rotate-1">
+                                <div class="absolute top-[-12px] right-8 w-16 h-4 washi-tape"></div>
+                                <div class="flex justify-between items-start mb-4 px-2">
+                                    <div class="flex flex-col">
+                                        <span
+                                            class="font-label text-xs text-on-surface-variant uppercase tracking-wider mb-1">Meio-dia</span>
+                                        <h4 class="font-headline text-xl text-on-surface">Forte &amp; Colombo</h4>
+                                    </div>
+                                    <span class="material-symbols-outlined text-outline"
+                                        style="font-variation-settings: 'FILL' 0;">local_cafe</span>
+                                </div>
+                                <img alt="Brunch at Confeitaria Colombo with a view"
+                                    class="w-full aspect-[4/3] object-cover rounded-sm border border-outline-variant/20"
+                                    data-alt="Elegant brunch setup with a cup of coffee topped with whipped cream, pastries, and orange juice on a wooden table with the Rio de Janeiro coast and Sugarloaf Mountain in the background."
+                                    src="https://lh3.googleusercontent.com/aida/ADBb0ug__UyojVFsM1K_PsZ_nvxQG5KD5ebh5sEu2GKmvc9Y9-wYVqGw9VZGkknBJFDz3AvGf_xIuM4OFS-MIm9NRu91Z5KpdQ5N5np5KMaKJDNw4u6e_qvMI1RtCWIq4vJI2GMR0dwwB7mpL-bs-q8vyF-jj5KHgXAz-1elKccBHfUo1D2yhgtN8hJK_dvrJNnWpO5nDMhAdSTUC8C3pGsnzrx3aBFcSJBaDbgPho3z_7D4a_uT5TxtOXFS3-0T5wQiCWOijeqy-hG1ew" />
+                                <p
+                                    class="font-caveat text-xl text-on-surface-variant absolute bottom-3 right-4 transform -rotate-3">
+                                    Brunch com vista para o mar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Activity 3: Afternoon -->
+                <div
+                    class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active mb-8">
+                    <!-- Marker -->
+                    <div
+                        class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-surface bg-surface-container-low text-primary shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow-sm z-10 hidden md:flex">
+                        <span class="material-symbols-outlined text-sm"
+                            style="font-variation-settings: 'FILL' 1;">beach_access</span>
+                    </div>
+                    <!-- Content Card -->
+                    <div class="w-full md:w-[calc(50%-3rem)] relative">
+                        <div
+                            class="bg-surface-container-lowest p-8 rounded-lg polaroid-shadow border border-outline-variant/15 transform md:-rotate-1 relative overflow-hidden">
+                            <!-- Decorative element -->
+                            <div
+                                class="absolute -right-8 -top-8 w-24 h-24 bg-tertiary-fixed-dim/20 rounded-full blur-2xl">
+                            </div>
+                            <div class="flex items-center gap-2 mb-6">
+                                <span
+                                    class="font-label text-sm text-on-surface-variant uppercase tracking-wide">Tarde</span>
+                            </div>
+                            <h4 class="font-headline text-3xl text-on-surface mb-4">Posto 5, Copacabana</h4>
+                            <p class="font-body text-on-surface-variant leading-relaxed mb-6">Tarde dedicada ao
+                                relaxamento nas areias de Copacabana. Água de coco gelada, leitura leve e a brisa do
+                                Atlântico.</p>
+                            <!-- Chips -->
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-3 py-1 bg-surface-variant text-on-surface-variant font-label text-xs rounded uppercase tracking-wider border border-outline-variant/50">Praia</span>
+                                <span
+                                    class="px-3 py-1 bg-surface-variant text-on-surface-variant font-label text-xs rounded uppercase tracking-wider border border-outline-variant/50">Descanso</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- BottomNavBar (Mobile Only) -->
+    <nav
+        class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-[#FDFBF7]/90 dark:bg-stone-900/90 backdrop-blur-lg rounded-t-lg shadow-[0px_-12px_32px_rgba(85,66,62,0.08)] md:hidden">
+        <a class="flex flex-col items-center justify-center text-[#3D405B] dark:text-stone-500 opacity-60 hover:opacity-100 hover:text-[#E07A5F] transition-all duration-300 ease-in-out"
+            href="#">
+            <span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">auto_stories</span>
+            <span class="font-manrope text-[10px] uppercase tracking-widest">Timeline</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-[#3D405B] dark:text-stone-500 opacity-60 hover:opacity-100 hover:text-[#E07A5F] transition-all duration-300 ease-in-out"
+            href="#">
+            <span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">restaurant</span>
+            <span class="font-manrope text-[10px] uppercase tracking-widest">Food</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-[#3D405B] dark:text-stone-500 opacity-60 hover:opacity-100 hover:text-[#E07A5F] transition-all duration-300 ease-in-out"
+            href="#">
+            <span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0;">photo_camera</span>
+            <span class="font-manrope text-[10px] uppercase tracking-widest">Photos</span>
+        </a>
+        <!-- Active State: Diary -->
+        <a class="flex flex-col items-center justify-center text-[#E07A5F] dark:text-[#E07A5F] scale-110 transition-transform duration-200"
+            href="#">
+            <span class="material-symbols-outlined mb-1 text-[#E07A5F]"
+                style="font-variation-settings: 'FILL' 1;">edit_note</span>
+            <span class="font-manrope text-[10px] uppercase tracking-widest text-[#E07A5F]">Diary</span>
+        </a>
+    </nav>
+</body>
+
+</html>

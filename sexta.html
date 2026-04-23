@@ -1,99 +1,107 @@
 <!DOCTYPE html>
 
-<html lang="pt-BR"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Itinerário no Rio</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;family=Epilogue:ital,wght@0,100..900;1,100..900&amp;family=Caveat:wght@400..700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Itinerário no Rio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;family=Epilogue:ital,wght@0,100..900;1,100..900&amp;family=Caveat:wght@400..700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
         tailwind.config = {
-          darkMode: "class",
-          theme: {
-            extend: {
-              "colors": {
-                      "on-surface": "#1b1c1a",
-                      "on-secondary-fixed": "#161a32",
-                      "background": "#fbf9f5",
-                      "surface-variant": "#e4e2de",
-                      "outline": "#88726d",
-                      "surface-container": "#efeeea",
-                      "on-secondary": "#ffffff",
-                      "surface-container-high": "#eae8e4",
-                      "inverse-primary": "#ffb4a1",
-                      "tertiary-fixed-dim": "#9fd1b8",
-                      "on-primary": "#ffffff",
-                      "error": "#ba1a1a",
-                      "tertiary": "#386753",
-                      "on-tertiary": "#ffffff",
-                      "secondary": "#5a5c79",
-                      "on-primary-fixed-variant": "#7c2e19",
-                      "on-tertiary-container": "#003725",
-                      "on-secondary-container": "#5e617d",
-                      "surface-tint": "#9a442d",
-                      "primary-container": "#e07a5f",
-                      "outline-variant": "#dbc1ba",
-                      "on-primary-fixed": "#3c0800",
-                      "secondary-fixed-dim": "#c2c4e5",
-                      "secondary-container": "#dcddff",
-                      "primary-fixed-dim": "#ffb4a1",
-                      "primary-fixed": "#ffdbd2",
-                      "on-tertiary-fixed-variant": "#1f4f3c",
-                      "on-primary-container": "#5b1604",
-                      "surface-container-low": "#f5f3ef",
-                      "inverse-on-surface": "#f2f0ed",
-                      "on-error": "#ffffff",
-                      "surface-dim": "#dbdad6",
-                      "surface-bright": "#fbf9f5",
-                      "secondary-fixed": "#dfe0ff",
-                      "on-background": "#1b1c1a",
-                      "tertiary-fixed": "#bbeed4",
-                      "surface-container-lowest": "#ffffff",
-                      "tertiary-container": "#70a18a",
-                      "on-tertiary-fixed": "#002115",
-                      "surface": "#fbf9f5",
-                      "primary": "#9a442d",
-                      "on-surface-variant": "#55423e",
-                      "on-error-container": "#93000a",
-                      "surface-container-highest": "#e4e2de",
-                      "error-container": "#ffdad6",
-                      "on-secondary-fixed-variant": "#424560",
-                      "inverse-surface": "#30312e"
-              },
-              "borderRadius": {
-                      "DEFAULT": "0.125rem",
-                      "lg": "0.25rem",
-                      "xl": "0.5rem",
-                      "full": "0.75rem"
-              },
-              "spacing": {},
-              "fontFamily": {
-                      "headline": [
-                              "Newsreader"
-                      ],
-                      "body": [
-                              "Manrope"
-                      ],
-                      "label": [
-                              "Epilogue"
-                      ],
-                      "hand": [
-                              "Caveat"
-                      ]
-              }
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface": "#1b1c1a",
+                        "on-secondary-fixed": "#161a32",
+                        "background": "#fbf9f5",
+                        "surface-variant": "#e4e2de",
+                        "outline": "#88726d",
+                        "surface-container": "#efeeea",
+                        "on-secondary": "#ffffff",
+                        "surface-container-high": "#eae8e4",
+                        "inverse-primary": "#ffb4a1",
+                        "tertiary-fixed-dim": "#9fd1b8",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "tertiary": "#386753",
+                        "on-tertiary": "#ffffff",
+                        "secondary": "#5a5c79",
+                        "on-primary-fixed-variant": "#7c2e19",
+                        "on-tertiary-container": "#003725",
+                        "on-secondary-container": "#5e617d",
+                        "surface-tint": "#9a442d",
+                        "primary-container": "#e07a5f",
+                        "outline-variant": "#dbc1ba",
+                        "on-primary-fixed": "#3c0800",
+                        "secondary-fixed-dim": "#c2c4e5",
+                        "secondary-container": "#dcddff",
+                        "primary-fixed-dim": "#ffb4a1",
+                        "primary-fixed": "#ffdbd2",
+                        "on-tertiary-fixed-variant": "#1f4f3c",
+                        "on-primary-container": "#5b1604",
+                        "surface-container-low": "#f5f3ef",
+                        "inverse-on-surface": "#f2f0ed",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#dbdad6",
+                        "surface-bright": "#fbf9f5",
+                        "secondary-fixed": "#dfe0ff",
+                        "on-background": "#1b1c1a",
+                        "tertiary-fixed": "#bbeed4",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-container": "#70a18a",
+                        "on-tertiary-fixed": "#002115",
+                        "surface": "#fbf9f5",
+                        "primary": "#9a442d",
+                        "on-surface-variant": "#55423e",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#e4e2de",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#424560",
+                        "inverse-surface": "#30312e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {},
+                    "fontFamily": {
+                        "headline": [
+                            "Newsreader"
+                        ],
+                        "body": [
+                            "Manrope"
+                        ],
+                        "label": [
+                            "Epilogue"
+                        ],
+                        "hand": [
+                            "Caveat"
+                        ]
+                    }
+                },
             },
-          },
         }
-      </script>
-<style>
+    </script>
+    <style>
         body {
             background-color: theme('colors.surface');
             color: theme('colors.on-surface');
             font-family: theme('fontFamily.body');
         }
-        
+
         /* Simulating paper texture */
         .paper-texture {
             background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
@@ -113,149 +121,195 @@
         .hide-scrollbar::-webkit-scrollbar {
             display: none;
         }
+
         .hide-scrollbar {
             -ms-overflow-style: none;
             scrollbar-width: none;
         }
     </style>
-<style>
-    body {
-      min-height: max(884px, 100dvh);
-    }
-  </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
 </head>
+
 <body class="antialiased min-h-screen relative pb-24 md:pb-0 paper-texture">
-<!-- TopAppBar -->
-<nav class="bg-[#FDFBF7]/90 dark:bg-stone-900/90 backdrop-blur-xl fixed top-0 w-full z-50 flex justify-between items-center px-4 h-14 border-b border-outline-variant/15 transition-all duration-300 ease-in-out">
-<button aria-label="Menu" class="text-[#E07A5F] dark:text-[#E07A5F] hover:opacity-75 transition-opacity z-10 relative">
-<span class="material-symbols-outlined" data-icon="menu">menu</span>
-</button>
-<span class="text-xl font-bold font-newsreader text-[#E07A5F] dark:text-[#E07A5F] tracking-tight absolute left-1/2 -translate-x-1/2 text-center pointer-events-none">Itinerário no Rio</span>
-<div class="w-6 z-10 relative"></div> <!-- Spacer for center alignment -->
-</nav>
-<!-- Sub Navigation -->
-<div class="fixed top-14 left-0 w-full z-40 bg-surface/95 backdrop-blur-md border-b border-outline-variant/15 shadow-sm">
-<div class="flex overflow-x-auto hide-scrollbar px-4 py-2 gap-6 sm:justify-center items-center h-10">
-<a class="font-label text-sm text-primary font-bold hover:text-primary transition-colors border-b-2 border-primary pb-0.5 whitespace-nowrap" href="sexta.html">Sexta</a>
-<a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap" href="sabado.html">Sábado</a>
-<a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap" href="domingo.html">Domingo</a>
-<a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap" href="segunda.html">Segunda</a>
-<a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap" href="terca.html">Terça</a>
-<a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap" href="faq.html">FAQ e Dicas</a>
-</div>
-</div>
-<!-- Main Content Canvas -->
-<main class="max-w-4xl mx-auto px-6 pt-36 pb-16 space-y-24">
-<!-- Day Section Header -->
-<section class="text-center md:text-left pt-8">
-<div class="inline-block relative">
-<span class="font-hand text-secondary text-2xl rotate-[-2deg] inline-block mb-2 ml-4">24 de Abril</span>
-<h2 class="font-headline text-5xl md:text-7xl text-on-surface font-medium leading-tight">Sexta-feira:<br/><span class="italic text-primary">A Chegada</span></h2>
-</div>
-<div class="mt-8 h-px bg-surface-variant w-1/3 mx-auto md:mx-0"></div>
-</section>
-<!-- Arrival & Morning -->
-<section class="relative">
-<div class="flex flex-col md:flex-row gap-12 items-center">
-<!-- Text Content -->
-<div class="md:w-1/2 space-y-6">
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-outline">flight_land</span>
-<h3 class="font-label text-sm uppercase tracking-widest text-on-surface-variant">Manhã • Desembarque</h3>
-</div>
-<p class="font-body text-lg leading-relaxed text-on-surface">
-                        A jornada tem início no Aeroporto Santos Dumont (SDU). A transferência para Copacabana revela imediatamente a geografia única da cidade. O destino inicial é o Posto 5, oferecendo um ponto de partida estratégico e icônico para a estadia.
+    <!-- TopAppBar -->
+    <nav
+        class="bg-[#FDFBF7]/90 dark:bg-stone-900/90 backdrop-blur-xl fixed top-0 w-full z-50 flex justify-between items-center px-4 h-14 border-b border-outline-variant/15 transition-all duration-300 ease-in-out">
+        <button aria-label="Menu"
+            class="text-[#E07A5F] dark:text-[#E07A5F] hover:opacity-75 transition-opacity z-10 relative">
+            <span class="material-symbols-outlined" data-icon="menu">menu</span>
+        </button>
+        <span
+            class="text-xl font-bold font-newsreader text-[#E07A5F] dark:text-[#E07A5F] tracking-tight absolute left-1/2 -translate-x-1/2 text-center pointer-events-none">Itinerário
+            no Rio</span>
+        <div class="w-6 z-10 relative"></div> <!-- Spacer for center alignment -->
+    </nav>
+    <!-- Sub Navigation -->
+    <div
+        class="fixed top-14 left-0 w-full z-40 bg-surface/95 backdrop-blur-md border-b border-outline-variant/15 shadow-sm">
+        <div class="flex overflow-x-auto hide-scrollbar px-4 py-2 gap-6 sm:justify-center items-center h-10">
+            <a class="font-label text-sm text-primary font-bold hover:text-primary transition-colors border-b-2 border-primary pb-0.5 whitespace-nowrap"
+                href="sexta.html">Sexta</a>
+            <a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap"
+                href="sabado.html">Sábado</a>
+            <a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap"
+                href="domingo.html">Domingo</a>
+            <a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap"
+                href="segunda.html">Segunda</a>
+            <a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap"
+                href="terca.html">Terça</a>
+            <a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap"
+                href="faq.html">FAQ e Dicas</a>
+        </div>
+    </div>
+    <!-- Main Content Canvas -->
+    <main class="max-w-4xl mx-auto px-6 pt-36 pb-16 space-y-24">
+        <!-- Day Section Header -->
+        <section class="text-center md:text-left pt-8">
+            <div class="inline-block relative">
+                <span class="font-hand text-secondary text-2xl rotate-[-2deg] inline-block mb-2 ml-4">24 de Abril</span>
+                <h2 class="font-headline text-5xl md:text-7xl text-on-surface font-medium leading-tight">
+                    Sexta-feira:<br /><span class="italic text-primary">A Chegada</span></h2>
+            </div>
+            <div class="mt-8 h-px bg-surface-variant w-1/3 mx-auto md:mx-0"></div>
+        </section>
+        <!-- Arrival & Morning -->
+        <section class="relative">
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <!-- Text Content -->
+                <div class="md:w-1/2 space-y-6">
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-outline">flight_land</span>
+                        <h3 class="font-label text-sm uppercase tracking-widest text-on-surface-variant">Manhã •
+                            Desembarque</h3>
+                    </div>
+                    <p class="font-body text-lg leading-relaxed text-on-surface">
+                        A jornada tem início no Aeroporto Santos Dumont (SDU). A transferência para Copacabana revela
+                        imediatamente a geografia única da cidade. O destino inicial é o Posto 5, oferecendo um ponto de
+                        partida estratégico e icônico para a estadia.
                     </p>
-</div>
-<!-- Polaroid Image -->
-<div class="md:w-1/2 relative w-full flex justify-center">
-<div class="absolute w-24 h-6 tape -top-3 left-1/2 -translate-x-1/2 rotate-[-1deg] z-10"></div>
-<div class="bg-surface-container-lowest p-4 pb-12 rotate-[2deg] polaroid-shadow max-w-sm w-full relative">
-<div class="border border-outline-variant/15 p-1">
-<img alt="Copacabana Beach" class="w-full aspect-[4/3] object-cover filter contrast-125 saturate-110 sepia-[.1]" data-alt="iconic wide shot of Copacabana beach in Rio de Janeiro with mosaic promenade, golden sand, and blue ocean water under bright sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzC6ZRn99G4pIR3CfDAL240RKrllaKyoPZD8S-A8QFJLDLRAgeogIS6vspy8mt0TdxZLPjvxdVpctmt2hSlS7KXcVm1q4bvUjnGSq0WoJrp3AkxKIHxJYJciHICkPLIVrHjQLmClo6ul5S_mDHnHZvSY32wVabZ1Dg-vCPsPD_TY_HyDKX3J7InwgEivxJGn7Sr8DHbYojdVe5NeBxdkjg7wmaQQUyvbRGIIX4sEqkw5JsXFKsH5wQ8DpB_Ck4IZrXWjizz8JnO08Q"/>
-</div>
-<p class="font-hand text-on-surface text-xl absolute bottom-4 right-6 rotate-[-1deg]">Posto 5</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Late Afternoon -->
-<section class="bg-surface-container-low -mx-6 px-6 py-20 relative mt-32">
-<div class="max-w-4xl mx-auto flex flex-col md:flex-row-reverse gap-16 items-center">
-<!-- Text Content -->
-<div class="md:w-1/2 space-y-6">
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-outline">wb_twilight</span>
-<h3 class="font-label text-sm uppercase tracking-widest text-on-surface-variant">Fim de Tarde • Contemplação</h3>
-</div>
-<h4 class="font-headline text-4xl text-on-surface">Pôr do Sol no Arpoador</h4>
-<p class="font-body text-lg leading-relaxed text-on-surface">
-                        Um dos espetáculos naturais mais reverenciados da cidade. A formação rochosa entre Copacabana e Ipanema serve como arquibancada natural para o poente sobre o oceano e o Morro Dois Irmãos.
+                </div>
+                <!-- Polaroid Image -->
+                <div class="md:w-1/2 relative w-full flex justify-center">
+                    <div class="absolute w-24 h-6 tape -top-3 left-1/2 -translate-x-1/2 rotate-[-1deg] z-10"></div>
+                    <div
+                        class="bg-surface-container-lowest p-4 pb-12 rotate-[2deg] polaroid-shadow max-w-sm w-full relative">
+                        <div class="border border-outline-variant/15 p-1">
+                            <img alt="Copacabana Beach"
+                                class="w-full aspect-[4/3] object-cover filter contrast-125 saturate-110 sepia-[.1]"
+                                data-alt="iconic wide shot of Copacabana beach in Rio de Janeiro with mosaic promenade, golden sand, and blue ocean water under bright sunlight"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzC6ZRn99G4pIR3CfDAL240RKrllaKyoPZD8S-A8QFJLDLRAgeogIS6vspy8mt0TdxZLPjvxdVpctmt2hSlS7KXcVm1q4bvUjnGSq0WoJrp3AkxKIHxJYJciHICkPLIVrHjQLmClo6ul5S_mDHnHZvSY32wVabZ1Dg-vCPsPD_TY_HyDKX3J7InwgEivxJGn7Sr8DHbYojdVe5NeBxdkjg7wmaQQUyvbRGIIX4sEqkw5JsXFKsH5wQ8DpB_Ck4IZrXWjizz8JnO08Q" />
+                        </div>
+                        <p class="font-hand text-on-surface text-xl absolute bottom-4 right-6 rotate-[-1deg]">Posto 5
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Late Afternoon -->
+        <section class="bg-surface-container-low -mx-6 px-6 py-20 relative mt-32">
+            <div class="max-w-4xl mx-auto flex flex-col md:flex-row-reverse gap-16 items-center">
+                <!-- Text Content -->
+                <div class="md:w-1/2 space-y-6">
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-outline">wb_twilight</span>
+                        <h3 class="font-label text-sm uppercase tracking-widest text-on-surface-variant">Fim de Tarde •
+                            Contemplação</h3>
+                    </div>
+                    <h4 class="font-headline text-4xl text-on-surface">Pôr do Sol no Arpoador</h4>
+                    <p class="font-body text-lg leading-relaxed text-on-surface">
+                        Um dos espetáculos naturais mais reverenciados da cidade. A formação rochosa entre Copacabana e
+                        Ipanema serve como arquibancada natural para o poente sobre o oceano e o Morro Dois Irmãos.
                     </p>
-</div>
-<!-- Scrapbook Cluster -->
-<div class="md:w-1/2 relative w-full">
-<div class="absolute w-20 h-5 tape top-10 -left-4 rotate-[45deg] z-10"></div>
-<div class="absolute w-20 h-5 tape bottom-10 -right-4 rotate-[45deg] z-10"></div>
-<div class="bg-surface-container-lowest p-3 pb-10 rotate-[-1.5deg] polaroid-shadow max-w-sm mx-auto">
-<img alt="Crowd watching sunset at Arpoador rocks" class="w-full aspect-square object-cover" data-alt="A large crowd of people gathered on the rocks at Arpoador in Rio de Janeiro, watching a golden sunset over the ocean with mountains in the background." src="https://lh3.googleusercontent.com/aida/ADBb0uiW2x0gqrMygt22uAwmp7ApghJcvFuRvOOaMhihhv0W6v4wux7i5ETAOy5fe8Nhu_B-Jjo7rwGMF4ZMJCc_b37rLVlXfFhlo6_CbspU-pxNwbKc99fzWoGAi-vuNWdy5VghU4LG3fxh-IdhuRNWGwfL-QmkRSQev8s6mddSeNVLhAhbgf1JVG-_7pXYkMITHZQ6Zd3jv6duX41KUezR7v3bDIoIGqf1AreZulqYwKCySrzqeK4T9fSIB-aKiM6kU1ZkQV04tFZ0AWU"/>
-</div>
-<!-- Handwritten Note -->
-<div class="absolute -right-8 md:-right-12 top-1/2 transform -translate-y-1/2 bg-[#fdfaf6] p-4 shadow-sm border border-outline-variant/30 rotate-[6deg] max-w-[180px]">
-<p class="font-hand text-tertiary-container text-xl leading-tight">Chegar cedo para pegar lugar!</p>
-<div class="absolute top-2 left-1/2 w-4 h-4 rounded-full bg-outline-variant/40 -translate-x-1/2 shadow-inner"></div> <!-- Push pin simulation -->
-</div>
-</div>
-</div>
-</section>
-<!-- Night -->
-<section class="relative pt-12">
-<div class="flex flex-col md:flex-row gap-12 items-start">
-<div class="md:w-1/3 pt-4">
-<div class="flex items-center gap-3 mb-6">
-<span class="material-symbols-outlined text-outline">restaurant</span>
-<h3 class="font-label text-sm uppercase tracking-widest text-on-surface-variant">Noite • Gastronomia</h3>
-</div>
-</div>
-<div class="md:w-2/3 border-l border-surface-variant pl-8 space-y-6">
-<h4 class="font-headline text-3xl text-on-surface">Jantar no Posto 5</h4>
-<p class="font-body text-lg leading-relaxed text-on-surface">
-                        O encerramento do primeiro dia propõe uma experiência gastronômica local nas imediações de Copacabana. A área oferece diversas opções que combinam a culinária autêntica com uma atmosfera descontraída, ideal para absorver o clima noturno carioca sem necessidade de grandes deslocamentos.
+                </div>
+                <!-- Scrapbook Cluster -->
+                <div class="md:w-1/2 relative w-full">
+                    <div class="absolute w-20 h-5 tape top-10 -left-4 rotate-[45deg] z-10"></div>
+                    <div class="absolute w-20 h-5 tape bottom-10 -right-4 rotate-[45deg] z-10"></div>
+                    <div
+                        class="bg-surface-container-lowest p-3 pb-10 rotate-[-1.5deg] polaroid-shadow max-w-sm mx-auto">
+                        <img alt="Crowd watching sunset at Arpoador rocks" class="w-full aspect-square object-cover"
+                            data-alt="A large crowd of people gathered on the rocks at Arpoador in Rio de Janeiro, watching a golden sunset over the ocean with mountains in the background."
+                            src="https://lh3.googleusercontent.com/aida/ADBb0uiW2x0gqrMygt22uAwmp7ApghJcvFuRvOOaMhihhv0W6v4wux7i5ETAOy5fe8Nhu_B-Jjo7rwGMF4ZMJCc_b37rLVlXfFhlo6_CbspU-pxNwbKc99fzWoGAi-vuNWdy5VghU4LG3fxh-IdhuRNWGwfL-QmkRSQev8s6mddSeNVLhAhbgf1JVG-_7pXYkMITHZQ6Zd3jv6duX41KUezR7v3bDIoIGqf1AreZulqYwKCySrzqeK4T9fSIB-aKiM6kU1ZkQV04tFZ0AWU" />
+                    </div>
+                    <!-- Handwritten Note -->
+                    <div
+                        class="absolute -right-8 md:-right-12 top-1/2 transform -translate-y-1/2 bg-[#fdfaf6] p-4 shadow-sm border border-outline-variant/30 rotate-[6deg] max-w-[180px]">
+                        <p class="font-hand text-tertiary-container text-xl leading-tight">Chegar cedo para pegar lugar!
+                        </p>
+                        <div
+                            class="absolute top-2 left-1/2 w-4 h-4 rounded-full bg-outline-variant/40 -translate-x-1/2 shadow-inner">
+                        </div> <!-- Push pin simulation -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Night -->
+        <section class="relative pt-12">
+            <div class="flex flex-col md:flex-row gap-12 items-start">
+                <div class="md:w-1/3 pt-4">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="material-symbols-outlined text-outline">restaurant</span>
+                        <h3 class="font-label text-sm uppercase tracking-widest text-on-surface-variant">Noite •
+                            Gastronomia</h3>
+                    </div>
+                </div>
+                <div class="md:w-2/3 border-l border-surface-variant pl-8 space-y-6">
+                    <h4 class="font-headline text-3xl text-on-surface">Jantar no Posto 5</h4>
+                    <p class="font-body text-lg leading-relaxed text-on-surface">
+                        O encerramento do primeiro dia propõe uma experiência gastronômica local nas imediações de
+                        Copacabana. A área oferece diversas opções que combinam a culinária autêntica com uma atmosfera
+                        descontraída, ideal para absorver o clima noturno carioca sem necessidade de grandes
+                        deslocamentos.
                     </p>
-<div class="inline-block mt-4 border border-outline-variant px-4 py-2 text-sm font-label uppercase tracking-widest text-on-surface-variant bg-surface-container-lowest rounded">
+                    <div
+                        class="inline-block mt-4 border border-outline-variant px-4 py-2 text-sm font-label uppercase tracking-widest text-on-surface-variant bg-surface-container-lowest rounded">
                         Explorar opções locais
                     </div>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="w-full py-12 px-8 bg-surface-container-low dark:bg-stone-950 flex flex-col items-center gap-4 text-center max-w-7xl mx-auto mb-20 md:mb-0">
-<p class="font-serif text-stone-900 dark:text-stone-100 font-bold">Roteiro Selecionado • Rio de Janeiro</p>
-<div class="flex gap-4">
-<a class="font-serif text-stone-600 dark:text-stone-400 text-sm hover:text-[#E07A5F] transition-colors" href="#">Sobre o Destino</a>
-<a class="font-serif text-stone-600 dark:text-stone-400 text-sm hover:text-[#E07A5F] transition-colors" href="#">Privacidade</a>
-</div>
-</footer>
-<!-- BottomNavBar (Mobile Only) -->
-<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-safe h-20 bg-surface/80 dark:bg-stone-900/80 backdrop-blur-[20px] border-t-0 rounded-t-2xl shadow-[0px_-12px_32px_rgba(85,66,62,0.08)] md:hidden">
-<!-- Active Item -->
-<button class="flex flex-col items-center justify-center text-[#E07A5F] bg-stone-100 dark:bg-stone-800 rounded-xl px-4 py-2 transition-all scale-95 duration-200">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">event_note</span>
-<span class="font-sans uppercase text-[10px] tracking-widest font-medium mt-1">Timeline</span>
-</button>
-<!-- Inactive Items -->
-<button class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 px-4 py-2 hover:text-[#E07A5F] hover:bg-stone-50 dark:hover:bg-stone-800 transition-colors rounded-xl">
-<span class="material-symbols-outlined">restaurant</span>
-<span class="font-sans uppercase text-[10px] tracking-widest font-medium mt-1">Food</span>
-</button>
-<button class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 px-4 py-2 hover:text-[#E07A5F] hover:bg-stone-50 dark:hover:bg-stone-800 transition-colors rounded-xl">
-<span class="material-symbols-outlined">photo_library</span>
-<span class="font-sans uppercase text-[10px] tracking-widest font-medium mt-1">Photos</span>
-</button>
-<button class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 px-4 py-2 hover:text-[#E07A5F] hover:bg-stone-50 dark:hover:bg-stone-800 transition-colors rounded-xl">
-<span class="material-symbols-outlined">edit_note</span>
-<span class="font-sans uppercase text-[10px] tracking-widest font-medium mt-1">Diary</span>
-</button>
-</nav>
-</body></html>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="w-full py-12 px-8 bg-surface-container-low dark:bg-stone-950 flex flex-col items-center gap-4 text-center max-w-7xl mx-auto mb-20 md:mb-0">
+        <p class="font-serif text-stone-900 dark:text-stone-100 font-bold">Roteiro Selecionado • Rio de Janeiro</p>
+        <div class="flex gap-4">
+            <a class="font-serif text-stone-600 dark:text-stone-400 text-sm hover:text-[#E07A5F] transition-colors"
+                href="#">Sobre o Destino</a>
+            <a class="font-serif text-stone-600 dark:text-stone-400 text-sm hover:text-[#E07A5F] transition-colors"
+                href="#">Privacidade</a>
+        </div>
+    </footer>
+    <!-- BottomNavBar (Mobile Only) -->
+    <nav
+        class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-safe h-20 bg-surface/80 dark:bg-stone-900/80 backdrop-blur-[20px] border-t-0 rounded-t-2xl shadow-[0px_-12px_32px_rgba(85,66,62,0.08)] md:hidden">
+        <!-- Active Item -->
+        <button
+            class="flex flex-col items-center justify-center text-[#E07A5F] bg-stone-100 dark:bg-stone-800 rounded-xl px-4 py-2 transition-all scale-95 duration-200">
+            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">event_note</span>
+            <span class="font-sans uppercase text-[10px] tracking-widest font-medium mt-1">Timeline</span>
+        </button>
+        <!-- Inactive Items -->
+        <button
+            class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 px-4 py-2 hover:text-[#E07A5F] hover:bg-stone-50 dark:hover:bg-stone-800 transition-colors rounded-xl">
+            <span class="material-symbols-outlined">restaurant</span>
+            <span class="font-sans uppercase text-[10px] tracking-widest font-medium mt-1">Food</span>
+        </button>
+        <button
+            class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 px-4 py-2 hover:text-[#E07A5F] hover:bg-stone-50 dark:hover:bg-stone-800 transition-colors rounded-xl">
+            <span class="material-symbols-outlined">photo_library</span>
+            <span class="font-sans uppercase text-[10px] tracking-widest font-medium mt-1">Photos</span>
+        </button>
+        <button
+            class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 px-4 py-2 hover:text-[#E07A5F] hover:bg-stone-50 dark:hover:bg-stone-800 transition-colors rounded-xl">
+            <span class="material-symbols-outlined">edit_note</span>
+            <span class="font-sans uppercase text-[10px] tracking-widest font-medium mt-1">Diary</span>
+        </button>
+    </nav>
+</body>
+
+</html>

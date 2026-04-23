@@ -1,94 +1,100 @@
 <!DOCTYPE html>
 
-<html class="light" lang="pt-BR"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Itinerário no Rio - Segunda-feira</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&amp;family=Epilogue:ital,wght@0,100..900;1,100..900&amp;family=Manrope:wght@200..800&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "tertiary-fixed-dim": "#9fd1b8",
-                    "on-primary-container": "#5b1604",
-                    "surface-variant": "#e4e2de",
-                    "inverse-surface": "#30312e",
-                    "secondary": "#5a5c79",
-                    "inverse-primary": "#ffb4a1",
-                    "tertiary-fixed": "#bbeed4",
-                    "on-secondary-container": "#5e617d",
-                    "secondary-fixed-dim": "#c2c4e5",
-                    "on-surface-variant": "#55423e",
-                    "on-secondary-fixed-variant": "#424560",
-                    "on-background": "#1b1c1a",
-                    "on-primary-fixed-variant": "#7c2e19",
-                    "surface-dim": "#dbdad6",
-                    "on-error-container": "#93000a",
-                    "background": "#fbf9f5",
-                    "primary": "#9a442d",
-                    "on-tertiary-container": "#003725",
-                    "surface-container-high": "#eae8e4",
-                    "on-tertiary-fixed-variant": "#1f4f3c",
-                    "on-primary": "#ffffff",
-                    "primary-container": "#e07a5f",
-                    "on-primary-fixed": "#3c0800",
-                    "secondary-container": "#dcddff",
-                    "tertiary": "#386753",
-                    "inverse-on-surface": "#f2f0ed",
-                    "outline": "#88726d",
-                    "surface-tint": "#9a442d",
-                    "on-surface": "#1b1c1a",
-                    "surface-container": "#efeeea",
-                    "on-secondary-fixed": "#161a32",
-                    "secondary-fixed": "#dfe0ff",
-                    "surface": "#fbf9f5",
-                    "outline-variant": "#dbc1ba",
-                    "surface-container-highest": "#e4e2de",
-                    "on-tertiary-fixed": "#002115",
-                    "surface-bright": "#fbf9f5",
-                    "primary-fixed-dim": "#ffb4a1",
-                    "primary-fixed": "#ffdbd2",
-                    "on-tertiary": "#ffffff",
-                    "tertiary-container": "#70a18a",
-                    "surface-container-low": "#f5f3ef",
-                    "on-error": "#ffffff",
-                    "error-container": "#ffdad6",
-                    "on-secondary": "#ffffff",
-                    "error": "#ba1a1a",
-                    "surface-container-lowest": "#ffffff"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.125rem",
-                    "lg": "0.25rem",
-                    "xl": "0.5rem",
-                    "full": "0.75rem"
-            },
-            "spacing": {},
-            "fontFamily": {
-                    "headline": [
+<html class="light" lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Itinerário no Rio - Segunda-feira</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&amp;family=Epilogue:ital,wght@0,100..900;1,100..900&amp;family=Manrope:wght@200..800&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#9fd1b8",
+                        "on-primary-container": "#5b1604",
+                        "surface-variant": "#e4e2de",
+                        "inverse-surface": "#30312e",
+                        "secondary": "#5a5c79",
+                        "inverse-primary": "#ffb4a1",
+                        "tertiary-fixed": "#bbeed4",
+                        "on-secondary-container": "#5e617d",
+                        "secondary-fixed-dim": "#c2c4e5",
+                        "on-surface-variant": "#55423e",
+                        "on-secondary-fixed-variant": "#424560",
+                        "on-background": "#1b1c1a",
+                        "on-primary-fixed-variant": "#7c2e19",
+                        "surface-dim": "#dbdad6",
+                        "on-error-container": "#93000a",
+                        "background": "#fbf9f5",
+                        "primary": "#9a442d",
+                        "on-tertiary-container": "#003725",
+                        "surface-container-high": "#eae8e4",
+                        "on-tertiary-fixed-variant": "#1f4f3c",
+                        "on-primary": "#ffffff",
+                        "primary-container": "#e07a5f",
+                        "on-primary-fixed": "#3c0800",
+                        "secondary-container": "#dcddff",
+                        "tertiary": "#386753",
+                        "inverse-on-surface": "#f2f0ed",
+                        "outline": "#88726d",
+                        "surface-tint": "#9a442d",
+                        "on-surface": "#1b1c1a",
+                        "surface-container": "#efeeea",
+                        "on-secondary-fixed": "#161a32",
+                        "secondary-fixed": "#dfe0ff",
+                        "surface": "#fbf9f5",
+                        "outline-variant": "#dbc1ba",
+                        "surface-container-highest": "#e4e2de",
+                        "on-tertiary-fixed": "#002115",
+                        "surface-bright": "#fbf9f5",
+                        "primary-fixed-dim": "#ffb4a1",
+                        "primary-fixed": "#ffdbd2",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#70a18a",
+                        "surface-container-low": "#f5f3ef",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-secondary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "surface-container-lowest": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {},
+                    "fontFamily": {
+                        "headline": [
                             "Newsreader"
-                    ],
-                    "body": [
+                        ],
+                        "body": [
                             "Manrope"
-                    ],
-                    "label": [
+                        ],
+                        "label": [
                             "Epilogue"
-                    ],
-                    "handwritten": [
+                        ],
+                        "handwritten": [
                             "Caveat"
-                    ]
-            }
-          },
-        },
-      }
+                        ]
+                    }
+                },
+            },
+        }
     </script>
-<style type="text/tailwindcss">
+    <style type="text/tailwindcss">
         @layer utilities {
             .bg-texture {
                 background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
@@ -105,111 +111,160 @@
             }
         }
     </style>
-<style>
-    body {
-      min-height: max(884px, 100dvh);
-    }
-  </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
 </head>
-<body class="bg-surface text-on-surface font-body bg-texture pb-32 selection:bg-primary-container selection:text-on-primary-container">
-<!-- TopAppBar -->
-<nav class="bg-[#FDFBF7]/90 dark:bg-stone-900/90 backdrop-blur-xl fixed top-0 w-full z-50 flex justify-between items-center px-4 h-14 border-b border-outline-variant/15 transition-all duration-300 ease-in-out">
-<button aria-label="Menu" class="text-[#E07A5F] dark:text-[#E07A5F] hover:opacity-75 transition-opacity z-10 relative">
-<span class="material-symbols-outlined" data-icon="menu">menu</span>
-</button>
-<span class="text-xl font-bold font-newsreader text-[#E07A5F] dark:text-[#E07A5F] tracking-tight absolute left-1/2 -translate-x-1/2 text-center pointer-events-none">Itinerário no Rio</span>
-<div class="w-6 z-10 relative"></div> <!-- Spacer for center alignment -->
-</nav>
-<!-- Sub Navigation -->
-<div class="fixed top-14 left-0 w-full z-40 bg-surface/95 backdrop-blur-md border-b border-outline-variant/15 shadow-sm">
-<div class="flex overflow-x-auto hide-scrollbar px-4 py-2 gap-6 sm:justify-center items-center h-10">
-<a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap" href="sexta.html">Sexta</a>
-<a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap" href="sabado.html">Sábado</a>
-<a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap" href="domingo.html">Domingo</a>
-<a class="font-label text-sm text-primary font-bold hover:text-primary transition-colors border-b-2 border-primary pb-0.5 whitespace-nowrap" href="segunda.html">Segunda</a>
-<a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap" href="terca.html">Terça</a>
-<a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap" href="faq.html">FAQ e Dicas</a>
-</div>
-</div>
-<!-- Main Content -->
-<main class="max-w-5xl mx-auto pt-32 px-4 sm:px-8">
-<!-- Segunda-feira Section -->
-<section class="py-8 relative" id="segunda">
-<!-- Section Header -->
-<div class="mb-16 relative z-10 max-w-2xl">
-<h2 class="font-headline text-5xl sm:text-6xl text-primary mb-2">Segunda-feira</h2>
-<p class="font-handwritten text-3xl text-secondary -rotate-2 ml-4">27 de Abril • Centro Histórico &amp; Porto</p>
-</div>
-<!-- Tape Accent -->
-<div class="absolute top-10 right-20 w-32 h-8 bg-surface-variant/80 rotate-3 z-0 shadow-sm border border-outline-variant/20"></div>
-<div class="grid grid-cols-1 md:grid-cols-12 gap-12 sm:gap-16">
-<!-- Morning: Historic Center -->
-<div class="col-span-1 md:col-span-7 flex flex-col gap-12 relative">
-<!-- Text Block -->
-<div class="bg-surface-container-low p-8 rounded-lg relative z-10 border border-outline-variant/15">
-<div class="absolute -top-4 -left-4 w-12 h-4 bg-outline-variant/40 -rotate-6 backdrop-blur-sm shadow-sm"></div>
-<h3 class="font-headline text-3xl text-on-surface mb-4">Manhã: O Coração Histórico</h3>
-<p class="font-body text-lg text-on-surface-variant leading-relaxed">
-                            A jornada começa pelo Centro Histórico, mergulhando na rica arquitetura e herança literária da cidade. O Real Gabinete Português de Leitura oferece um espetáculo visual de estilo neomanuelino, abrigando milhares de obras raras.
+
+<body
+    class="bg-surface text-on-surface font-body bg-texture pb-32 selection:bg-primary-container selection:text-on-primary-container">
+    <!-- TopAppBar -->
+    <nav
+        class="bg-[#FDFBF7]/90 dark:bg-stone-900/90 backdrop-blur-xl fixed top-0 w-full z-50 flex justify-between items-center px-4 h-14 border-b border-outline-variant/15 transition-all duration-300 ease-in-out">
+        <button aria-label="Menu"
+            class="text-[#E07A5F] dark:text-[#E07A5F] hover:opacity-75 transition-opacity z-10 relative">
+            <span class="material-symbols-outlined" data-icon="menu">menu</span>
+        </button>
+        <span
+            class="text-xl font-bold font-newsreader text-[#E07A5F] dark:text-[#E07A5F] tracking-tight absolute left-1/2 -translate-x-1/2 text-center pointer-events-none">Itinerário
+            no Rio</span>
+        <div class="w-6 z-10 relative"></div> <!-- Spacer for center alignment -->
+    </nav>
+    <!-- Sub Navigation -->
+    <div
+        class="fixed top-14 left-0 w-full z-40 bg-surface/95 backdrop-blur-md border-b border-outline-variant/15 shadow-sm">
+        <div class="flex overflow-x-auto hide-scrollbar px-4 py-2 gap-6 sm:justify-center items-center h-10">
+            <a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap"
+                href="sexta.html">Sexta</a>
+            <a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap"
+                href="sabado.html">Sábado</a>
+            <a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap"
+                href="domingo.html">Domingo</a>
+            <a class="font-label text-sm text-primary font-bold hover:text-primary transition-colors border-b-2 border-primary pb-0.5 whitespace-nowrap"
+                href="segunda.html">Segunda</a>
+            <a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap"
+                href="terca.html">Terça</a>
+            <a class="font-label text-sm text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap"
+                href="faq.html">FAQ e Dicas</a>
+        </div>
+    </div>
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto pt-32 px-4 sm:px-8">
+        <!-- Segunda-feira Section -->
+        <section class="py-8 relative" id="segunda">
+            <!-- Section Header -->
+            <div class="mb-16 relative z-10 max-w-2xl">
+                <h2 class="font-headline text-5xl sm:text-6xl text-primary mb-2">Segunda-feira</h2>
+                <p class="font-handwritten text-3xl text-secondary -rotate-2 ml-4">27 de Abril • Centro Histórico &amp;
+                    Porto</p>
+            </div>
+            <!-- Tape Accent -->
+            <div
+                class="absolute top-10 right-20 w-32 h-8 bg-surface-variant/80 rotate-3 z-0 shadow-sm border border-outline-variant/20">
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 sm:gap-16">
+                <!-- Morning: Historic Center -->
+                <div class="col-span-1 md:col-span-7 flex flex-col gap-12 relative">
+                    <!-- Text Block -->
+                    <div class="bg-surface-container-low p-8 rounded-lg relative z-10 border border-outline-variant/15">
+                        <div
+                            class="absolute -top-4 -left-4 w-12 h-4 bg-outline-variant/40 -rotate-6 backdrop-blur-sm shadow-sm">
+                        </div>
+                        <h3 class="font-headline text-3xl text-on-surface mb-4">Manhã: O Coração Histórico</h3>
+                        <p class="font-body text-lg text-on-surface-variant leading-relaxed">
+                            A jornada começa pelo Centro Histórico, mergulhando na rica arquitetura e herança literária
+                            da cidade. O Real Gabinete Português de Leitura oferece um espetáculo visual de estilo
+                            neomanuelino, abrigando milhares de obras raras.
                         </p>
-<p class="font-body text-lg text-on-surface-variant leading-relaxed mt-4">
-                            Em seguida, uma pausa na tradicional Confeitaria Colombo (Matriz) para apreciar doces clássicos em um ambiente Belle Époque preservado, antes de visitar a solene Igreja da Antiga Sé.
+                        <p class="font-body text-lg text-on-surface-variant leading-relaxed mt-4">
+                            Em seguida, uma pausa na tradicional Confeitaria Colombo (Matriz) para apreciar doces
+                            clássicos em um ambiente Belle Époque preservado, antes de visitar a solene Igreja da Antiga
+                            Sé.
                         </p>
-</div>
-<!-- Polaroid 1 -->
-<div class="bg-surface-container-lowest p-4 pb-12 rotate-2 polaroid-shadow border border-outline-variant/15 w-full max-w-sm self-end relative z-20 -mt-16 sm:-mt-24 mr-4 sm:mr-8">
-<div class="aspect-[4/5] bg-surface-variant overflow-hidden border border-outline-variant/10 relative">
-<img alt="A person standing inside the majestic Real Gabinete Português de Leitura in Rio de Janeiro, surrounded by floor-to-ceiling bookshelves" class="w-full h-full object-cover" data-alt="A person standing at the base of the massive, ornate dark wood bookshelves of the Real Gabinete Português de Leitura library in Rio de Janeiro, showcasing its grand architecture and historic atmosphere" src="https://lh3.googleusercontent.com/aida/ADBb0uhIVlwLXMrlY5q7Oft9r7lqELpyZWo71yb9O3e-fm6x1fAzv_YuDCYQtrVRA6pgrZ-gQKJ4FCOFoeaFzLZrBv9YPKBHa5aFovHWJyVEPYHassjFnSWA84vxS4vGMiOUcsYZcAMWpwtjYZvnVlm3z4z54Grvevw1m2JrdAYANYjKYImLUKWUgBrtzuw-9f3HzqjXaFWjcpJ8jyxSqdfdXxXUrVSG0Jvtw-Yniv7o9tCWS-TRrSPo5f7Jqi1Yi1NqV68phrnuM3HCCw"/>
-</div>
-<p class="font-handwritten text-2xl text-secondary mt-6 text-center absolute bottom-3 w-full left-0">Real Gabinete Português</p>
-</div>
-</div>
-<!-- Afternoon: Porto Maravilha -->
-<div class="col-span-1 md:col-span-5 flex flex-col gap-8 md:mt-32">
-<!-- Polaroid 2 -->
-<div class="bg-surface-container-lowest p-4 pb-10 -rotate-3 polaroid-shadow border border-outline-variant/15 relative z-10 ml-4 sm:ml-0">
-<div class="absolute top-2 right-1/2 translate-x-1/2 w-16 h-5 bg-surface-variant/60 -rotate-2 backdrop-blur-sm shadow-sm"></div>
-<div class="aspect-square bg-surface-variant overflow-hidden border border-outline-variant/10 relative">
-<img alt="Igreja de Nossa Senhora do Monte do Carmo, a Antiga Sé no Rio de Janeiro" class="w-full h-full object-cover" data-alt="futuristic white architecture of Museum of Tomorrow building in Rio de Janeiro reflecting on water under clear blue sky" src="https://lh3.googleusercontent.com/aida/ADBb0uiQA9z71H03tya4m0dMZhmpTvYUeV8AOm5_x6jVy3XLI_X5DD2t6DVGVHPhqLoPzSIphDyTF1pKUnuVIiUBoKw6D2TLanfu0ITITcUmSOMq5K_hJdYm3YKx1uJJw2lZy3Fx1DVPAR_yX0wOr_xuMCky8iLJ6-8F7emDsvXHWcOstDF48OGQDINn0AIlTjv_9vQ1nWyEZEPMT0t10bWpo4C3hvMaSTrFTtsu7HVYze26Zm1f8hbrHs7dWc9cEKjPJRJ1wloEKzAxIW4"/>
-</div>
-<p class="font-handwritten text-xl text-secondary mt-4 text-center">Igreja da Antiga Sé</p>
-</div>
-<!-- Text Block -->
-<div class="bg-surface p-6 relative">
-<div class="absolute left-0 top-0 w-1 h-full bg-primary/20"></div>
-<h3 class="font-headline text-2xl text-on-surface mb-3 pl-4">Tarde: Praça XV &amp; História</h3>
-<p class="font-body text-base text-on-surface-variant leading-relaxed pl-4">A Praça XV de Novembro, no coração do Rio de Janeiro, é um dos marcos históricos mais importantes do Brasil, tendo sido palco do "Dia do Fico" e da assinatura da Lei Áurea. Localizada à beira da Baía de Guanabara, a praça hoje une o passado colonial e imperial com a modernidade do VLT e o movimento diário das barcas.</p>
-</div>
-</div>
-</div>
-<!-- Map Pin / Note -->
-<div class="mt-16 flex justify-center relative">
-<div class="bg-[#fef9c3] px-8 py-6 max-w-md rotate-1 shadow-md border border-yellow-200 relative">
-<div class="absolute -top-3 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-primary shadow-sm"></div>
-<p class="font-handwritten text-2xl text-on-surface-variant text-center leading-relaxed">
-                         Dica: A Confeitaria Colombo costuma ter fila. Chegar um pouco antes do almoço é o ideal!
-                     </p>
-</div>
-</div>
-</section>
-</main>
-<!-- BottomNavBar -->
-<nav class="md:hidden bg-[#FDFBF7]/90 dark:bg-stone-900/90 backdrop-blur-lg fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 shadow-[0px_-12px_32px_rgba(85,66,62,0.08)] rounded-t-lg border-t border-outline-variant/10">
-<a class="flex flex-col items-center justify-center text-[#E07A5F] dark:text-[#E07A5F] scale-110 Active: scale-95 transition-transform duration-200" href="#">
-<span class="material-symbols-outlined" data-icon="auto_stories" data-weight="fill" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
-<span class="font-manrope text-[10px] uppercase tracking-widest mt-1">Timeline</span>
-</a>
-<a class="flex flex-col items-center justify-center text-[#3D405B] dark:text-stone-500 opacity-60 hover:opacity-100 hover:text-[#E07A5F] transition-all duration-200" href="#">
-<span class="material-symbols-outlined" data-icon="restaurant">restaurant</span>
-<span class="font-manrope text-[10px] uppercase tracking-widest mt-1">Food</span>
-</a>
-<a class="flex flex-col items-center justify-center text-[#3D405B] dark:text-stone-500 opacity-60 hover:opacity-100 hover:text-[#E07A5F] transition-all duration-200" href="#">
-<span class="material-symbols-outlined" data-icon="photo_camera">photo_camera</span>
-<span class="font-manrope text-[10px] uppercase tracking-widest mt-1">Photos</span>
-</a>
-<a class="flex flex-col items-center justify-center text-[#3D405B] dark:text-stone-500 opacity-60 hover:opacity-100 hover:text-[#E07A5F] transition-all duration-200" href="#">
-<span class="material-symbols-outlined" data-icon="edit_note">edit_note</span>
-<span class="font-manrope text-[10px] uppercase tracking-widest mt-1">Diary</span>
-</a>
-</nav>
-</body></html>
+                    </div>
+                    <!-- Polaroid 1 -->
+                    <div
+                        class="bg-surface-container-lowest p-4 pb-12 rotate-2 polaroid-shadow border border-outline-variant/15 w-full max-w-sm self-end relative z-20 -mt-16 sm:-mt-24 mr-4 sm:mr-8">
+                        <div
+                            class="aspect-[4/5] bg-surface-variant overflow-hidden border border-outline-variant/10 relative">
+                            <img alt="A person standing inside the majestic Real Gabinete Português de Leitura in Rio de Janeiro, surrounded by floor-to-ceiling bookshelves"
+                                class="w-full h-full object-cover"
+                                data-alt="A person standing at the base of the massive, ornate dark wood bookshelves of the Real Gabinete Português de Leitura library in Rio de Janeiro, showcasing its grand architecture and historic atmosphere"
+                                src="https://lh3.googleusercontent.com/aida/ADBb0uhIVlwLXMrlY5q7Oft9r7lqELpyZWo71yb9O3e-fm6x1fAzv_YuDCYQtrVRA6pgrZ-gQKJ4FCOFoeaFzLZrBv9YPKBHa5aFovHWJyVEPYHassjFnSWA84vxS4vGMiOUcsYZcAMWpwtjYZvnVlm3z4z54Grvevw1m2JrdAYANYjKYImLUKWUgBrtzuw-9f3HzqjXaFWjcpJ8jyxSqdfdXxXUrVSG0Jvtw-Yniv7o9tCWS-TRrSPo5f7Jqi1Yi1NqV68phrnuM3HCCw" />
+                        </div>
+                        <p
+                            class="font-handwritten text-2xl text-secondary mt-6 text-center absolute bottom-3 w-full left-0">
+                            Real Gabinete Português</p>
+                    </div>
+                </div>
+                <!-- Afternoon: Porto Maravilha -->
+                <div class="col-span-1 md:col-span-5 flex flex-col gap-8 md:mt-32">
+                    <!-- Polaroid 2 -->
+                    <div
+                        class="bg-surface-container-lowest p-4 pb-10 -rotate-3 polaroid-shadow border border-outline-variant/15 relative z-10 ml-4 sm:ml-0">
+                        <div
+                            class="absolute top-2 right-1/2 translate-x-1/2 w-16 h-5 bg-surface-variant/60 -rotate-2 backdrop-blur-sm shadow-sm">
+                        </div>
+                        <div
+                            class="aspect-square bg-surface-variant overflow-hidden border border-outline-variant/10 relative">
+                            <img alt="Igreja de Nossa Senhora do Monte do Carmo, a Antiga Sé no Rio de Janeiro"
+                                class="w-full h-full object-cover"
+                                data-alt="futuristic white architecture of Museum of Tomorrow building in Rio de Janeiro reflecting on water under clear blue sky"
+                                src="https://lh3.googleusercontent.com/aida/ADBb0uiQA9z71H03tya4m0dMZhmpTvYUeV8AOm5_x6jVy3XLI_X5DD2t6DVGVHPhqLoPzSIphDyTF1pKUnuVIiUBoKw6D2TLanfu0ITITcUmSOMq5K_hJdYm3YKx1uJJw2lZy3Fx1DVPAR_yX0wOr_xuMCky8iLJ6-8F7emDsvXHWcOstDF48OGQDINn0AIlTjv_9vQ1nWyEZEPMT0t10bWpo4C3hvMaSTrFTtsu7HVYze26Zm1f8hbrHs7dWc9cEKjPJRJ1wloEKzAxIW4" />
+                        </div>
+                        <p class="font-handwritten text-xl text-secondary mt-4 text-center">Igreja da Antiga Sé</p>
+                    </div>
+                    <!-- Text Block -->
+                    <div class="bg-surface p-6 relative">
+                        <div class="absolute left-0 top-0 w-1 h-full bg-primary/20"></div>
+                        <h3 class="font-headline text-2xl text-on-surface mb-3 pl-4">Tarde: Praça XV &amp; História</h3>
+                        <p class="font-body text-base text-on-surface-variant leading-relaxed pl-4">A Praça XV de
+                            Novembro, no coração do Rio de Janeiro, é um dos marcos históricos mais importantes do
+                            Brasil, tendo sido palco do "Dia do Fico" e da assinatura da Lei Áurea. Localizada à beira
+                            da Baía de Guanabara, a praça hoje une o passado colonial e imperial com a modernidade do
+                            VLT e o movimento diário das barcas.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Map Pin / Note -->
+            <div class="mt-16 flex justify-center relative">
+                <div class="bg-[#fef9c3] px-8 py-6 max-w-md rotate-1 shadow-md border border-yellow-200 relative">
+                    <div class="absolute -top-3 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-primary shadow-sm">
+                    </div>
+                    <p class="font-handwritten text-2xl text-on-surface-variant text-center leading-relaxed">
+                        Dica: A Confeitaria Colombo costuma ter fila. Chegar um pouco antes do almoço é o ideal!
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- BottomNavBar -->
+    <nav
+        class="md:hidden bg-[#FDFBF7]/90 dark:bg-stone-900/90 backdrop-blur-lg fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 shadow-[0px_-12px_32px_rgba(85,66,62,0.08)] rounded-t-lg border-t border-outline-variant/10">
+        <a class="flex flex-col items-center justify-center text-[#E07A5F] dark:text-[#E07A5F] scale-110 Active: scale-95 transition-transform duration-200"
+            href="#">
+            <span class="material-symbols-outlined" data-icon="auto_stories" data-weight="fill"
+                style="font-variation-settings: 'FILL' 1;">auto_stories</span>
+            <span class="font-manrope text-[10px] uppercase tracking-widest mt-1">Timeline</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-[#3D405B] dark:text-stone-500 opacity-60 hover:opacity-100 hover:text-[#E07A5F] transition-all duration-200"
+            href="#">
+            <span class="material-symbols-outlined" data-icon="restaurant">restaurant</span>
+            <span class="font-manrope text-[10px] uppercase tracking-widest mt-1">Food</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-[#3D405B] dark:text-stone-500 opacity-60 hover:opacity-100 hover:text-[#E07A5F] transition-all duration-200"
+            href="#">
+            <span class="material-symbols-outlined" data-icon="photo_camera">photo_camera</span>
+            <span class="font-manrope text-[10px] uppercase tracking-widest mt-1">Photos</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-[#3D405B] dark:text-stone-500 opacity-60 hover:opacity-100 hover:text-[#E07A5F] transition-all duration-200"
+            href="#">
+            <span class="material-symbols-outlined" data-icon="edit_note">edit_note</span>
+            <span class="font-manrope text-[10px] uppercase tracking-widest mt-1">Diary</span>
+        </a>
+    </nav>
+</body>
+
+</html>
